@@ -1,0 +1,141 @@
+.advantages {
+  &__item {
+    width: 280px;
+    min-height: 275px;
+    padding: 30px 22px;
+    border-radius: 12px;
+    border: 2px solid var(--colorLightGrey);
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin: 0 0 32px 0;
+    }
+  }
+
+  &__title {
+    margin: 22px 0 12px 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--colorBlack);
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--colorDarkGrey);
+
+    p {
+      margin: 0 0 12px 0;
+    }
+  }
+
+  &__bottom {
+    display: none;
+    height: 140px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    align-items: flex-end;
+    justify-content: center;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      var(--colorWhite) 69.27%
+    );
+
+    &.active {
+      background: transparent;
+    }
+  }
+
+  &__expand {
+    width: 100%;
+    max-width: 272px;
+    background-color: transparent;
+    border: 2px solid #d7d7d8;
+    border-radius: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--colorDarkGrey);
+    padding: 12px;
+  }
+
+  &__textHide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .advantages {
+    &__item {
+      width: 50%;
+      max-width: 450px;
+      min-height: 166px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    &__info {
+      width: calc(100% - 72px);
+    }
+
+    &__title {
+      margin: 0 0 12px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .advantages {
+    &__item {
+      width: 48%;
+      min-height: 265px;
+      align-content: flex-start;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin: 0 0 24px 0;
+      }
+    }
+
+    &__info {
+      width: 100%;
+      margin: 24px 0 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .advantages {
+    &__item {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 0 16px 0;
+      padding: 30px 22px;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin: 0 0 16px 0;
+      }
+
+      &:nth-child(4) {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .advantages {
+    &__bottom {
+      display: flex;
+    }
+  }
+}

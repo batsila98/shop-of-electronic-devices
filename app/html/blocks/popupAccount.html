@@ -1,0 +1,198 @@
+<div class="popup popupAccount">
+
+    <div class="popupInner popupInner_md">
+
+        <div class="popupClose">
+            <button class="popupClose__button">
+                <svg class="popupClose__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.375 7.975L15.775 2.625C16.075 2.325 16.075 1.775 15.775 1.475L14.525 0.225C14.225 -0.075 13.675 -0.075 13.375 0.225L8.025 5.625L2.625 0.225C2.325 -0.075 1.775 -0.075 1.475 0.225L0.225 1.475C-0.075 1.775 -0.075 2.325 0.225 2.625L5.625 7.975L0.225 13.375C-0.075 13.675 -0.075 14.225 0.225 14.525L1.475 15.775C1.775 16.075 2.325 16.075 2.625 15.775L8.025 10.375L13.375 15.775C13.675 16.075 14.225 16.075 14.525 15.775L15.775 14.525C16.075 14.225 16.075 13.675 15.775 13.375L10.375 7.975Z"
+                        fill="white" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="popupContent popupAccount__login">
+            <h2 class="popupAccount__title">
+                Войти в личный кабинет
+            </h2>
+
+            <form action="" class="popupAccount__form popupAccount__formLogin">
+                <label class="popupAccount__inputLabel">
+                    <span class="popupAccount__inputText">Email или номер телефона</span>
+                    <input type="text" class="popupAccount__input popupAccount__inputEmail">
+                </label>
+                <span class="popupAccount__messageError">
+                    Такого пользователя не существует
+                </span>
+                <label class="popupAccount__inputLabel">
+                    <span class="popupAccount__inputText">Пароль</span>
+                    <input type="password" class="popupAccount__input popupAccount__inputPassword">
+                </label>
+                <span class="popupAccount__messageError">
+                    Неверный пароль
+                </span>
+                <label class="popupAccount__label popupAccount__label_short">
+                    <input type="checkbox" class="popupAccount__checkbox" id="rememberMe">
+                    <span class="popupAccount__checkmark">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    Запомнить меня
+                </label>
+                <a href="#" class="popupAccount__link popupAccount__link_grey">
+                    Напомнить пароль
+                </a>
+                <div class="popupAccount__buttonsWrapper">
+                    <button type="submit" class="popupAccount__button button buttonPrimary">
+                        Войти
+                    </button>
+                </div>
+            </form>
+
+            <div class="popupAccount__divider">
+                или
+            </div>
+
+            <div class="socialLogin">
+                <button class="socialLogin__button socialLogin__button_google">
+                    <i class="fab fa-google socialLogin__icon"></i>
+                    Войти через Google
+                </button>
+
+                <button class="socialLogin__button socialLogin__button_facebook">
+                    <i class="fab fa-facebook-square socialLogin__icon"></i>
+                    Войти через Facebook
+                </button>
+            </div>
+
+            <p class="popupAccount__text">
+                Нет учетной записи? <a href="#" class="popupAccount__link">Зарегистрироваться</a>
+            </p>
+        </div>
+
+        <div class="popupContent popupAccount__registration">
+            <h2 class="popupAccount__title">
+                Создать личный профиль
+            </h2>
+
+            <form action="" class="popupAccount__form popupAccount__formRegistration">
+                <label class="popupAccount__inputLabel">
+                    <span class="popupAccount__inputText">Фамилия</span>
+                    <input type="text" class="popupAccount__input">
+                </label>
+                <span class="popupAccount__messageError">
+                    Неверная фамилия
+                </span>
+
+                <label class="popupAccount__inputLabel">
+                    <span class="popupAccount__inputText">Имя</span>
+                    <input type="text" class="popupAccount__input">
+                </label>
+                <span class="popupAccount__messageError">
+                    Неверное имя
+                </span>
+
+                <label class="popupAccount__inputLabel">
+                    <span class="popupAccount__inputText">Отчество</span>
+                    <input type="text" class="popupAccount__input">
+                </label>
+                <span class="popupAccount__messageError">
+                    Неверное отчество
+                </span>
+
+                <label class="popupAccount__inputLabel">
+                    <span class="popupAccount__inputText">Дата рождения</span>
+                    <input type="text" class="popupAccount__input datepicker-here" id="popupAccount__userBirthday">
+                </label>
+                <span class="popupAccount__messageError">
+                    Неверный формат дати рождения
+                </span>
+
+                <label class="popupAccount__inputLabel">
+                    <span class="popupAccount__inputText">Номер телефона</span>
+                    <input type="tel" class="popupAccount__input popupAccount__inputPhone" maxlength="19">
+                </label>
+                <span class="popupAccount__messageError">
+                    Неверный формат телефона
+                </span>
+
+                <label class="popupAccount__inputLabel">
+                    <span class="popupAccount__inputText">Email</span>
+                    <input type="email" class="popupAccount__input popupAccount__inputEmail">
+                </label>
+                <span class="popupAccount__messageError">
+                    Неверный формат email
+                </span>
+
+                <label class="popupAccount__label">
+                    <input type="checkbox" class="popupAccount__checkbox">
+                    <span class="popupAccount__checkmark">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    <div class="popupAccount__agreement">
+                        Даю согласие на обработку своих персональных данных в соответствии с
+                        <a href="#" class="popupAccount__link">Политикой обработки и защиты персональных данных.</a>
+                    </div>
+                </label>
+                <div
+                    class="popupAccount__buttonsWrapper popupAccount__buttonsWrapper_double popupAccount__buttonsWrapper_borderTop">
+                    <button class="popupAccount__button popupAccount__button_short button buttonSecondary">
+                        Назад
+                    </button>
+
+                    <button type="submit" class="popupAccount__button popupAccount__button_short button buttonPrimary">
+                        Создать
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="popupContent popupAccount__password">
+            <h2 class="popupAccount__title">
+                Восстановить пароль
+            </h2>
+
+            <form action="" class="popupAccount__form popupAccount__formPassword">
+                <label class="popupAccount__inputLabel popupAccount__inputLabel_single">
+                    <span class="popupAccount__inputText">Email или номер телефона</span>
+                    <input type="text" class="popupAccount__input popupAccount__inputEmail">
+                </label>
+                <span class="popupAccount__messageError">
+                    Такого пользователя не существует
+                </span>
+
+                <div class="popupAccount__buttonsWrapper popupAccount__buttonsWrapper_double">
+                    <button class="popupAccount__button popupAccount__button_short button buttonSecondary">
+                        Назад
+                    </button>
+
+                    <button type="submit" class="popupAccount__button popupAccount__button_short button buttonPrimary">
+                        Восстановить
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="popupContent popupAccount__message">
+            <svg class="popupAccount__image" width="96" height="96" viewBox="0 0 96 96" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M48 0C21.4839 0 0 21.6774 0 48C0 74.5161 21.4839 96 48 96C74.3226 96 96 74.5161 96 48C96 21.6774 74.3226 0 48 0ZM48 89.8064C24.9677 89.8064 6.19355 71.2258 6.19355 48C6.19355 25.1613 24.7742 6.19355 48 6.19355C70.8387 6.19355 89.8064 24.9677 89.8064 48C89.8064 71.0323 71.0323 89.8064 48 89.8064ZM75.2903 36.7742C76.2581 35.8064 76.2581 34.2581 75.2903 33.4839L73.7419 31.7419C72.7742 30.7742 71.2258 30.7742 70.4516 31.7419L38.7097 63.0968L25.3548 49.7419C24.5806 48.7742 23.0323 48.7742 22.0645 49.7419L20.5161 51.2903C19.5484 52.2581 19.5484 53.6129 20.5161 54.5806L37.1613 71.4193C37.9355 72.1935 39.4839 72.1935 40.4516 71.4193L75.2903 36.7742Z"
+                    fill="#04BF45" />
+            </svg>
+
+            <p class="popupAccount__text popupAccount__text_black">
+                Инструкция по востановлению пароля отправлена на Ваш Email
+            </p>
+
+            <div class="popupAccount__buttonsWrapper popupAccount__buttonsWrapper_borderTop">
+                <button class="popupAccount__button button buttonPrimary">
+                    Закрыть
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</div>

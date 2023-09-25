@@ -1,0 +1,144 @@
+.popup {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  overflow: auto;
+  padding: 128px 0;
+  color: var(--colorBlack);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  background: rgba(23, 23, 23, 0.8);
+
+  &Inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &_xl {
+      width: 100%;
+      max-width: 800px;
+    }
+
+    &_lg {
+      width: 100%;
+      max-width: 688px;
+    }
+
+    &_md {
+      width: 100%;
+      max-width: 488px;
+    }
+
+    &_sm {
+      width: 296px;
+    }
+  }
+
+  &Close {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 16px 0;
+
+    &__button {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.24);
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        border-color: var(--colorWhite);
+      }
+    }
+  }
+
+  &Content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 48px;
+    border-radius: 12px;
+    background-color: var(--colorWhite);
+    box-shadow: 0px 30px 60px rgba(23, 23, 23, 0.24);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .popup {
+    &Inner {
+      &_xl {
+        max-width: 610px;
+      }
+
+      &_lg {
+        max-width: 610px;
+      }
+
+      &_md {
+      }
+
+      &_sm {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popup {
+    &Inner {
+      &_xl {
+        max-width: 472px;
+      }
+
+      &_lg {
+        padding: 0 24px;
+      }
+
+      &_md {
+      }
+
+      &_sm {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .popup {
+    &Inner {
+      &_xl {
+        padding: 0 12px;
+      }
+
+      &_lg {
+      }
+
+      &_md {
+        width: calc(100% - 24px);
+      }
+
+      &_sm {
+      }
+    }
+
+    &Content {
+      padding: 32px 24px;
+    }
+  }
+}

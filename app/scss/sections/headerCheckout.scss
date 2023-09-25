@@ -1,0 +1,135 @@
+.headerCheckout {
+  width: 100%;
+  padding: 12px 0;
+  z-index: 1;
+  position: relative;
+  background-color: var(--colorWhite);
+  filter: drop-shadow(0px 30px 60px rgba(23, 23, 23, 0.04));
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  // &__logo {
+  // }
+
+  // &__image {
+  // }
+
+  &__phone {
+    margin: 0 0 0 auto;
+    padding: 3px 24px 4px 0;
+    text-align: right;
+    border-right: 2px solid var(--colorLightGrey);
+  }
+
+  &__phoneTitle {
+    margin: 0 0 2px 0;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--colorDarkGrey);
+  }
+
+  &__phoneLink {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--colorBlack);
+  }
+
+  &__schedule {
+    padding: 0 0 0 24px;
+    position: relative;
+  }
+
+  &__scheduleButton {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--colorBlue);
+    border: none;
+    background-color: transparent;
+
+    &.active {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__scheduleIcon {
+    margin: 0 0 0 8px;
+  }
+
+  &__scheduleDropdown {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: -26px;
+    z-index: 2;
+    width: 280px;
+    padding: 24px 32px;
+    color: var(--colorWhite);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: 12px;
+    background-color: #242424;
+    box-shadow: 0px 30px 60px rgba(23, 23, 23, 0.24);
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -6px;
+      right: 24px;
+      transform: rotate(45deg);
+      border-radius: 4px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-color: #242424;
+    }
+
+    strong {
+      color: rgba(255, 255, 255, 0.38);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headerCheckout {
+    &__phone {
+      width: 100%;
+      margin: 16px 0 12px 0;
+      padding: 10px 0;
+      border: none;
+      text-align: left;
+      border-top: 2px solid var(--colorLightGrey);
+      border-bottom: 2px solid var(--colorLightGrey);
+    }
+
+    &__schedule {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__scheduleDropdown {
+      top: 50px;
+      right: 50%;
+      transform: translate(50%, 0);
+
+      &::before {
+        right: 120px;
+      }
+    }
+  }
+}

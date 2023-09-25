@@ -1,0 +1,205 @@
+.hello {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 128px 0;
+
+  &__content {
+    position: relative;
+    width: 500px;
+  }
+
+  &__image {
+    width: 167px;
+    height: 167px;
+    object-fit: cover;
+  }
+
+  &__emoji {
+    position: absolute;
+
+    &Hand {
+      top: 74px;
+      right: 47px;
+    }
+
+    &Apple {
+      top: 150px;
+      right: -8px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 62px;
+    color: var(--colorBlack);
+    margin: 30px 0 0 0;
+  }
+
+  &__subtitle {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 130%;
+    color: var(--colorBlack);
+    margin: 0 0 24px 0;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--colorDarkGrey);
+    margin: 0 0 14px 0;
+  }
+
+  &__link {
+    margin: 46px 0 0 0;
+  }
+
+  &__advantages {
+    width: 592px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hello {
+    padding: 64px 0;
+
+    &__content {
+      width: 100%;
+      padding: 0 0 48px 0;
+      text-align: center;
+      border-bottom: 2px solid var(--colorLightGrey);
+    }
+
+    &__image {
+      width: 128px;
+      height: 128px;
+      border-radius: 24px;
+    }
+
+    &__emoji {
+      &Hand {
+        top: 1.5%;
+        left: 12.6%;
+      }
+
+      &Apple {
+        top: 20.5%;
+        right: 9%;
+      }
+    }
+
+    &__text {
+      max-width: 610px;
+      margin: 0 auto 12px auto;
+    }
+
+    &__link {
+      margin: 32px auto 0 auto;
+    }
+
+    &__advantages {
+      width: 100%;
+      padding: 48px 0 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .hello {
+    &__text {
+      max-width: 82%;
+    }
+
+    &__emoji {
+      &Hand {
+        width: 80px;
+        padding: 0;
+        top: 4%;
+        left: 5.5%;
+      }
+
+      &Apple {
+        width: 60px;
+        top: 21%;
+        right: 4%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hello {
+    padding: 46px 0 48px 0;
+
+    &__content {
+      padding: 0 0 32px 0;
+    }
+
+    &__image {
+      width: 124px;
+      height: 124px;
+    }
+
+    &__title {
+      margin: 22px 0 0 0;
+      font-size: 32px;
+      line-height: 42px;
+    }
+
+    &__subtitle {
+      margin: 0 0 16px 0;
+      font-size: 20px;
+    }
+
+    &__text {
+      max-width: 100%;
+      text-align: left;
+    }
+
+    &__link {
+      width: 100%;
+      max-width: 272px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hello {
+    &__advantages {
+      height: 350px;
+      padding: 32px 0 80px 0;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .hello {
+    &__emoji {
+      &Hand {
+        width: 58px;
+        top: -8px;
+        left: -4px;
+      }
+
+      &Apple {
+        width: 44px;
+        top: 16%;
+        right: 0px;
+      }
+    }
+
+    &__advantages {
+      height: 350px;
+      padding: 32px 0 80px 0;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+}

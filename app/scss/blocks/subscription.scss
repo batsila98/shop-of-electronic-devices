@@ -1,0 +1,385 @@
+.subscription {
+  padding: 64px 0 40px 0;
+
+  &__content {
+    min-height: 191px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 28px 24px 32px 0;
+    background: var(--colorBlue);
+    border-radius: 12px;
+    position: relative;
+  }
+
+  &__image {
+    position: absolute;
+    top: -104px;
+    left: -70px;
+    width: 341px;
+    height: 341px;
+    object-fit: cover;
+  }
+
+  &__description {
+    width: 578px;
+    padding: 0 24px 0 0;
+    color: var(--colorWhite);
+    border-right: 2px solid rgba(255, 255, 255, 0.12);
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  &__subtitle {
+    margin: 0 0 12px 0;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.64);
+  }
+
+  &__form {
+    width: 406px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 0 0 24px;
+    color: var(--colorWhite);
+  }
+
+  &__formTitle {
+    width: 100%;
+    margin: 0 0 12px 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  &__input {
+    width: 250px;
+    height: 48px;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 21px;
+    border: none;
+    border-radius: 12px 0 0 12px;
+    outline: none;
+    background-color: #ffffff;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 21px;
+      color: var(--colorDarkGrey);
+    }
+  }
+
+  &__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 48px;
+    width: calc(100% - 250px);
+    border-radius: 0 12px 12px 0;
+    background: var(--colorWhite);
+  }
+
+  &__button {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    color: var(--colorBlue);
+    border-radius: 12px;
+    border: 2px solid var(--colorWhite);
+    background-color: var(--colorWhite);
+
+    &:hover {
+      color: var(--colorWhite);
+      background-color: #377dff;
+
+      &:after {
+        opacity: 0;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      height: 32px;
+      width: 2px;
+      position: absolute;
+      top: 7px;
+      left: 0;
+      background-color: var(--colorLightGrey);
+      transition: all 0.3s;
+    }
+
+    &Icon {
+      display: none;
+    }
+  }
+
+  &__emoji {
+    position: absolute;
+
+    &Rocket {
+      top: 86%;
+      right: 28%;
+    }
+
+    &Stars {
+      top: 30px;
+      right: 38px;
+    }
+  }
+}
+
+.popupSubscription {
+  &__content {
+    justify-content: center;
+  }
+
+  &__image {
+    margin: 0 0 32px 0;
+  }
+
+  &__text {
+    margin: 0 0 24px 0;
+    padding: 0 0 30px 0;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    border-bottom: 2px solid var(--colorLightGrey);
+  }
+
+  &__link {
+    font-weight: 500;
+    color: var(--colorBlue);
+  }
+
+  &__button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .subscription {
+    overflow: hidden;
+    padding: 64px 0 35px 0;
+
+    &__content {
+      padding: 32px;
+      justify-content: space-between;
+    }
+
+    &__image {
+      position: absolute;
+      width: 272px;
+      height: 272px;
+      left: unset;
+      right: -56px;
+      top: -95px;
+    }
+
+    &__description {
+      width: 444px;
+    }
+
+    &__form {
+      width: 422px;
+    }
+
+    &__input {
+      width: 68%;
+    }
+
+    &__submit {
+      width: 32%;
+    }
+
+    &__emoji {
+      &Stars {
+        right: 56%;
+        top: 24px;
+      }
+
+      &Rocket {
+        top: 189px;
+        left: 68px;
+        width: 53px;
+        height: 53px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .subscription {
+    padding: 64px 0 34px 0;
+
+    &__description {
+      width: 100%;
+      padding: 0 0 32px 0;
+      margin: 0 0 32px 0;
+      border: none;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+    }
+
+    &__form {
+      width: 100%;
+      padding: 0;
+      align-items: center;
+    }
+
+    &__formTitle {
+      width: 30.5%;
+      margin: 0;
+    }
+
+    &__input {
+      width: 50.5%;
+    }
+
+    &__submit {
+      position: static;
+      width: 19%;
+    }
+
+    &__emoji {
+      &Stars {
+        right: 43%;
+        top: 18px;
+      }
+
+      &Rocket {
+        top: 94%;
+        left: 5.3%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subscription {
+    &__content {
+      padding: 32px 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .subscription {
+    &__image {
+      width: 210px;
+      height: 210px;
+      top: -64px;
+      left: unset;
+      right: -43px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 26px;
+      margin: 0 0 12px 0;
+    }
+
+    &__subtitle {
+      margin: 0 0 24px 0;
+    }
+
+    &__formTitle {
+      width: 100%;
+      margin: 0 0 12px 0;
+    }
+
+    &__input {
+      width: 70%;
+    }
+
+    &__submit {
+      width: 30%;
+    }
+
+    &__button {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .subscription {
+    &__emoji {
+      &Stars {
+        right: 22%;
+        top: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .subscription {
+    padding: 40px 0 0 0;
+
+    &__title {
+      width: 200px;
+    }
+
+    &__emoji {
+      &Rocket {
+        top: 58%;
+        left: 72%;
+        width: 51px;
+        height: 51px;
+      }
+    }
+
+    &__input {
+      width: calc(100% - 48px);
+      padding: 12px 16px;
+    }
+
+    &__submit {
+      width: 48px;
+    }
+
+    &__button {
+      &:active {
+        svg {
+          path {
+            fill: var(--colorWhite);
+          }
+        }
+      }
+    }
+
+    &__buttonText {
+      display: none;
+    }
+
+    &__buttonIcon {
+      display: block;
+    }
+  }
+
+  .popupSubscription {
+    &__image {
+      width: 48px;
+      height: 48px;
+      margin: 0 0 24px 0;
+    }
+  }
+}

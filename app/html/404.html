@@ -1,0 +1,35 @@
+@@include('./sections/header.html')
+
+<main class="pageNotFound">
+
+    <div class="container">
+        <section class="pageNotFound__content">
+
+
+            <img src="images/pages/pageNotFound/404.png" alt="" class="pageNotFound__image">
+
+            <h1 class="pageNotFound__title">
+                Страница не найдена
+            </h1>
+
+            <p class="pageNotFound__text">
+                Вы указали неверный адрес или перешли по некорректной ссылки
+            </p>
+
+            <a href="" class="pageNotFound__link button buttonPrimary">
+                Перейти на главную
+            </a>
+        </section>
+    </div>
+
+    <div class="pageNotFound__viewed">
+        @@include('./blocks/viewed.html')
+    </div>
+
+    <div class="pageNotFound__subscription">
+        @@include('./blocks/subscription.html')
+    </div>
+
+</main>
+
+@@include('./sections/footer.html')

@@ -1,0 +1,293 @@
+<div class="productFilters">
+
+    <button class="productFilters__mobileButton">
+        <span class="productFilters__mobileTitle">
+            <svg class="productFilters__mobileIcon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M18.1045 0H1.89546C0.21596 0 -0.643317 2.02943 0.567483 3.20025L6.89489 9.5227V16.2354C6.89489 16.8599 7.16829 17.4062 7.63699 17.7965L10.1367 19.6698C11.3475 20.4894 13.1442 19.7089 13.1442 18.1478V9.5227L19.4325 3.20025C20.6433 2.02943 19.784 0 18.1045 0ZM11.2694 8.74215V18.1087L8.76967 16.2354V8.74215L1.89546 1.87332H18.1436L11.2694 8.74215Z"
+                    fill="#377DFF" />
+            </svg>
+            Фильтры
+        </span>
+        <svg class="productFilters__mobileArrow" width="14" height="8" viewBox="0 0 14 8" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M13.8814 0.749507L13.2802 0.118343C13.122 -0.0394477 12.8689 -0.0394477 12.7424 0.118343L7.01582 5.83037L1.25763 0.118343C1.13107 -0.0394477 0.877966 -0.0394477 0.719774 0.118343L0.118644 0.749507C-0.039548 0.87574 -0.039548 1.12821 0.118644 1.286L6.73107 7.88166C6.88927 8.03945 7.11073 8.03945 7.26893 7.88166L13.8814 1.286C14.0395 1.12821 14.0395 0.87574 13.8814 0.749507Z"
+                fill="#377DFF" />
+        </svg>
+    </button>
+
+    <form action="#" class="productFilters__form filtersForm">
+
+        <div class="filtersForm__column">
+            <div class="filtersForm__current">
+                <button class="filtersForm__currentClear">
+                    Очистить все
+                </button>
+            </div>
+
+            <div class="filtersForm__filter filtersForm__filter_borderBottom">
+                <button class="filtersForm__button">
+                    <span class="filtersForm__name">
+                        Наличие
+                    </span>
+                    <svg class="filtersForm__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 0C5.37097 0 0 5.37097 0 12C0 18.629 5.37097 24 12 24C18.629 24 24 18.629 24 12C24 5.37097 18.629 0 12 0ZM22.4516 12C22.4516 17.7581 17.7581 22.4516 12 22.4516C6.24194 22.4516 1.54839 17.8065 1.54839 12C1.54839 6.29032 6.19355 1.54839 12 1.54839C17.7097 1.54839 22.4516 6.24194 22.4516 12ZM12.3871 16.2097L17.9516 10.6452C18.1935 10.4032 18.1935 10.0645 17.9516 9.82258L17.6129 9.48387C17.371 9.24193 17.0323 9.24193 16.7903 9.48387L12 14.2742L7.16129 9.48387C6.91935 9.24193 6.58065 9.24193 6.33871 9.48387L6 9.82258C5.75806 10.0645 5.75806 10.4032 6 10.6452L11.5645 16.2097C11.8065 16.4516 12.1452 16.4516 12.3871 16.2097Z"
+                            fill="#A7A7A7" />
+                    </svg>
+                </button>
+
+                <div class="filtersForm__content filtersForm__content_opened">
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="instockYes" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                Только в наличии
+                                <span class="filtersForm__quantity">(24)</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filtersForm__filter filtersForm__filter_borderBottom">
+                <button class="filtersForm__button">
+                    <span class="filtersForm__name">
+                        Модельный ряд
+                    </span>
+                    <svg class="filtersForm__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 0C5.37097 0 0 5.37097 0 12C0 18.629 5.37097 24 12 24C18.629 24 24 18.629 24 12C24 5.37097 18.629 0 12 0ZM22.4516 12C22.4516 17.7581 17.7581 22.4516 12 22.4516C6.24194 22.4516 1.54839 17.8065 1.54839 12C1.54839 6.29032 6.19355 1.54839 12 1.54839C17.7097 1.54839 22.4516 6.24194 22.4516 12ZM12.3871 16.2097L17.9516 10.6452C18.1935 10.4032 18.1935 10.0645 17.9516 9.82258L17.6129 9.48387C17.371 9.24193 17.0323 9.24193 16.7903 9.48387L12 14.2742L7.16129 9.48387C6.91935 9.24193 6.58065 9.24193 6.33871 9.48387L6 9.82258C5.75806 10.0645 5.75806 10.4032 6 10.6452L11.5645 16.2097C11.8065 16.4516 12.1452 16.4516 12.3871 16.2097Z"
+                            fill="#A7A7A7" />
+                    </svg>
+                </button>
+
+                <div class="filtersForm__content filtersForm__content_opened">
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="iphone11" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                iPhone 11
+                                <span class="filtersForm__quantity">(7)</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="iphone11pro" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                iPhone 11 Pro
+                                <span class="filtersForm__quantity">(6)</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="iphone11promax" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                iPhone 11 Pro Max
+                                <span class="filtersForm__quantity">(9)</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="iphone12" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                iPhone 12
+                                <span class="filtersForm__quantity">(2)</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="iphone12pro" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                iPhone 12 Pro
+                                <span class="filtersForm__quantity">(8)</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="iphone12promax" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                iPhone 12 Pro Max
+                                <span class="filtersForm__quantity">(11)</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="iphone12promini" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                iPhone 12 Pro Mini
+                                <span class="filtersForm__quantity">(14)</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="iphone12se2020" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                iPhone 12 SE 2020
+                                <span class="filtersForm__quantity">(24)</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="iphonexs" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                iPhone XS
+                                <span class="filtersForm__quantity">(2)</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="iphonexr" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                iPhone XR
+                                <span class="filtersForm__quantity">(5)</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filtersForm__filter filtersForm__filter_borderBottom">
+                <button class="filtersForm__button">
+                    <span class="filtersForm__name">
+                        Память
+                    </span>
+                    <svg class="filtersForm__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 0C5.37097 0 0 5.37097 0 12C0 18.629 5.37097 24 12 24C18.629 24 24 18.629 24 12C24 5.37097 18.629 0 12 0ZM22.4516 12C22.4516 17.7581 17.7581 22.4516 12 22.4516C6.24194 22.4516 1.54839 17.8065 1.54839 12C1.54839 6.29032 6.19355 1.54839 12 1.54839C17.7097 1.54839 22.4516 6.24194 22.4516 12ZM12.3871 16.2097L17.9516 10.6452C18.1935 10.4032 18.1935 10.0645 17.9516 9.82258L17.6129 9.48387C17.371 9.24193 17.0323 9.24193 16.7903 9.48387L12 14.2742L7.16129 9.48387C6.91935 9.24193 6.58065 9.24193 6.33871 9.48387L6 9.82258C5.75806 10.0645 5.75806 10.4032 6 10.6452L11.5645 16.2097C11.8065 16.4516 12.1452 16.4516 12.3871 16.2097Z"
+                            fill="#A7A7A7" />
+                    </svg>
+                </button>
+
+                <div class="filtersForm__content filtersForm__content_opened">
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="gd16" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                16 GB
+                                <span class="filtersForm__quantity">(5)</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="gd32" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                32 GB
+                                <span class="filtersForm__quantity">(24)</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="gd64" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                64 GB
+                                <span class="filtersForm__quantity">(12)</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="gd128" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                128 GB
+                                <span class="filtersForm__quantity">(15)</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="gd512" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                512 GB
+                                <span class="filtersForm__quantity">(4)</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filtersForm__column">
+            <div class="filtersForm__filter">
+                <button class="filtersForm__button">
+                    <span class="filtersForm__name">
+                        Особенности
+                    </span>
+                    <svg class="filtersForm__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 0C5.37097 0 0 5.37097 0 12C0 18.629 5.37097 24 12 24C18.629 24 24 18.629 24 12C24 5.37097 18.629 0 12 0ZM22.4516 12C22.4516 17.7581 17.7581 22.4516 12 22.4516C6.24194 22.4516 1.54839 17.8065 1.54839 12C1.54839 6.29032 6.19355 1.54839 12 1.54839C17.7097 1.54839 22.4516 6.24194 22.4516 12ZM12.3871 16.2097L17.9516 10.6452C18.1935 10.4032 18.1935 10.0645 17.9516 9.82258L17.6129 9.48387C17.371 9.24193 17.0323 9.24193 16.7903 9.48387L12 14.2742L7.16129 9.48387C6.91935 9.24193 6.58065 9.24193 6.33871 9.48387L6 9.82258C5.75806 10.0645 5.75806 10.4032 6 10.6452L11.5645 16.2097C11.8065 16.4516 12.1452 16.4516 12.3871 16.2097Z"
+                            fill="#A7A7A7" />
+                    </svg>
+                </button>
+
+                <div class="filtersForm__content">
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="wirelesscharger" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                Беспроводная зарядка
+                                <span class="filtersForm__quantity">(29)</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="facerecognition" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                Распознавание лица
+                                <span class="filtersForm__quantity">(36)</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="filtersForm__checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="fingerprintscanner" class="filtersForm__inputCheckbox">
+                            <div class="filtersForm__checkmark"><i class="fas fa-check"></i></div>
+                            <span class="filtersForm__name">
+                                Сканер отпечатков пальцев
+                                <span class="filtersForm__quantity">(12)</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+</div>

@@ -1,0 +1,101 @@
+@function strokeDashoffset($num) {
+  @return 440 - (440 * $num) / 100;
+}
+
+@keyframes anim_circle-html {
+  to {
+    stroke-dashoffset: strokeDashoffset(66);
+  }
+}
+
+.popupNotifications {
+  position: fixed;
+  bottom: 32px;
+  right: 48px;
+
+  &__item {
+    display: none;
+    // display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 380px;
+    margin: 0 0 12px 0;
+    padding: 27px 32px;
+    background: #171717;
+    box-shadow: 0px 15px 30px rgba(23, 23, 23, 0.12);
+    border-radius: 12px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  //   &__message {
+  //   }
+
+  &__link {
+    display: block;
+    color: var(--colorBlue);
+    text-decoration: underline;
+  }
+
+  &__close {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__progressbar {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 3;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke: var(--colorBlue);
+    stroke-linecap: round;
+    transform: translate(2px, 2px); // stroke-width / 2
+
+    &_animated {
+      animation: anim_circle-html 6s linear forwards;
+    }
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .popupNotifications {
+    width: 100%;
+    right: 0;
+    padding: 0 24px;
+
+    &__item {
+      width: 100%;
+      min-width: 100%;
+      text-align: center;
+      justify-content: center;
+      box-shadow: 0px 30px 60px rgba(23, 23, 23, 0.04);
+    }
+
+    &__text {
+      width: 100%;
+      margin: 0 0 24px 0;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+@import "common.scss";
+
+// import components styles
+@import "components/buttons.scss";
+@import "components/popup.scss";
+@import "components/variables.scss";
+
+// import blocks styles
+@import "blocks/about.scss";
+@import "blocks/advantages.scss";
+@import "blocks/accountNavigation.scss";
+@import "blocks/banner.scss";
+@import "blocks/breadcrumbs.scss";
+@import "blocks/container.scss";
+@import "blocks/hello.scss";
+@import "blocks/logo.scss";
+@import "blocks/livesearch.scss";
+@import "blocks/menuCatalog.scss";
+@import "blocks/menus.scss";
+@import "blocks/popupAccount.scss";
+@import "blocks/popupCart.scss";
+@import "blocks/popupMessage.scss";
+@import "blocks/popupNotifications.scss";
+@import "blocks/popupOrderHistory.scss";
+@import "blocks/popupPhoto.scss";
+@import "blocks/popupRemoveReview.scss";
+@import "blocks/popupRemoveViewed.scss";
+@import "blocks/popupVideo.scss";
+@import "blocks/popupWishlist.scss";
+@import "blocks/productAccessories.scss";
+@import "blocks/productBanner.scss";
+@import "blocks/productCard.scss";
+@import "blocks/productDescription.scss";
+@import "blocks/productFeatures.scss";
+@import "blocks/productFilters.scss";
+@import "blocks/productNotify.scss";
+@import "blocks/productOptions.scss";
+@import "blocks/productProperties.scss";
+@import "blocks/productPurchase.scss";
+@import "blocks/productSidebar.scss";
+@import "blocks/productSlider.scss";
+@import "blocks/productVideoReview.scss";
+@import "blocks/productsSet.scss";
+@import "blocks/productsSort.scss";
+@import "blocks/reviewCard.scss";
+@import "blocks/reviewForm.scss";
+@import "blocks/search.scss";
+@import "blocks/suggestionLeaveFeedback.scss";
+@import "blocks/subscription.scss";
+@import "blocks/userOrders.scss";
+@import "blocks/wishlist.scss";
+
+// import sections styles
+@import "sections/footer.scss";
+@import "sections/footerCheckout.scss";
+@import "sections/header.scss";
+@import "sections/headerCheckout.scss";
+
+// import pages styles
+@import "pages/404.scss";
+@import "pages/about.scss";
+@import "pages/account.scss";
+@import "pages/accountEditReview.scss";
+@import "pages/accountReviews.scss";
+@import "pages/accountSettings.scss";
+@import "pages/accountViewed.scss";
+@import "pages/catalog.scss";
+@import "pages/checkout.scss";
+@import "pages/comparison.scss";
+@import "pages/contact.scss";
+@import "pages/delivery.scss";
+@import "pages/guarantee.scss";
+@import "pages/home.scss";
+@import "pages/product.scss";
+@import "pages/thankyou.scss";

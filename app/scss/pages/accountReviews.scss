@@ -1,0 +1,239 @@
+.accountReviews {
+  &__title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    margin: 0 0 24px 0;
+  }
+
+  &__icon {
+    margin: 0 16px 0 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 0 32px 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__product {
+    width: 223px;
+    padding: 24px;
+  }
+
+  &__review {
+    width: 673px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .accountReviews {
+    &__title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    &__item {
+      gap: 8px;
+    }
+
+    .productCard {
+      width: 100%;
+      height: 112px;
+      flex-direction: column;
+      align-items: flex-start;
+      align-content: flex-start;
+      justify-content: center;
+
+      &__imageWrapper {
+        width: 64px;
+        height: 64px;
+        padding: 4px;
+        margin: 0 12px 0 0;
+      }
+
+      &__title {
+        width: 58%;
+        min-height: unset;
+        margin: 0 0 8px 0;
+      }
+
+      &__rating {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
+
+      &__price {
+        width: 20%;
+        text-align: right;
+        padding: 0 24px 0 0;
+      }
+
+      &__buttons {
+        width: 20%;
+      }
+    }
+
+    &__review {
+      width: 100%;
+
+      .reviewCard {
+        &__media {
+          flex-wrap: nowrap;
+          overflow: auto;
+          scrollbar-width: none; /* Firefox */
+          -ms-overflow-style: none; /* IE and Edge */
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+
+        &__mediaItem {
+          width: 167px;
+          min-width: 167px;
+          height: 110px;
+        }
+      }
+    }
+
+    .noReview {
+      height: 390px;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .accountReviews {
+    &__item {
+      gap: 8px;
+    }
+
+    .productCard {
+      width: 224px;
+      height: auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+
+      &__imageWrapper {
+        width: 192px;
+        height: 192px;
+        padding: 12px;
+        margin: 0;
+      }
+
+      &__title {
+        width: 100%;
+        min-height: 63px;
+        margin: 12px 0 10px 0;
+      }
+
+      &__rating {
+        width: 100%;
+        padding: 0 0 22px 0;
+        margin: 0 0 16px 0;
+        border-bottom: 2px solid var(--colorLightGrey);
+      }
+
+      &__price {
+        width: auto;
+      }
+
+      &__buttons {
+        width: auto;
+      }
+    }
+
+    &__review {
+      width: calc(100% - 232px);
+    }
+
+    .noReview {
+      height: 415px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .accountReviews {
+    &__product {
+      width: 100%;
+    }
+
+    .productCard {
+      width: 100%;
+
+      &__imageWrapper {
+        width: 64px;
+        height: 64px;
+        padding: 4px;
+        margin: 0;
+      }
+
+      &__title {
+        width: calc(100% - 76px);
+        min-height: unset;
+        margin: 0 0 22px 0;
+      }
+
+      &__rating {
+        width: 100%;
+        margin: -20px 0 16px 0;
+        padding: 0 0 22px 76px;
+        border-bottom: 2px solid var(--colorLightGrey);
+      }
+    }
+
+    &__review {
+      width: 100%;
+
+      .reviewCard {
+        &__mediaItem {
+          width: 150px;
+          min-width: 150px;
+          height: 100px;
+        }
+      }
+    }
+
+    .noReview {
+      height: 358px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .accountReviews {
+    &__review {
+      .reviewCard {
+        &__rate {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .accountReviews {
+    &__item {
+      margin: 0 -24px 32px -24px;
+
+      &:last-child {
+        margin: 0 -24px;
+      }
+    }
+  }
+}

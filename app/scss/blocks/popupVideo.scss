@@ -1,0 +1,31 @@
+.popupVideo {
+  &__iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .popupVideo {
+    &__iframe {
+      height: 344px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popupVideo {
+    &__iframe {
+      height: 265px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .popupVideo {
+    &__iframe {
+      height: 60vw;
+    }
+  }
+}

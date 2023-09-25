@@ -1,0 +1,188 @@
+.popupWishlist {
+  &__content {
+    justify-content: space-between;
+  }
+
+  &__create {
+    display: none;
+  }
+
+  &__rename {
+    display: none;
+  }
+
+  &__move {
+    display: none;
+  }
+
+  &__remove {
+    display: none;
+  }
+
+  &__share {
+    display: none;
+  }
+
+  &__title {
+    margin: 0 0 24px 0;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  &__image {
+    margin: 0 auto 24px auto;
+  }
+
+  &__text {
+    padding: 0 0 32px 0;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    border-bottom: 2px solid var(--colorLightGrey);
+  }
+
+  &__bold {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+    color: var(--colorBlue);
+  }
+
+  &__label {
+    width: 100%;
+    height: 60px;
+    padding: 20px 24px 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: 12px;
+    background-color: #f5f6fa;
+    border: 2px solid var(--colorLightGrey);
+    transition: border-color 0.3s;
+
+    &:hover {
+      border-color: var(--colorBlue);
+    }
+
+    &_active {
+      border-color: var(--colorBlue);
+    }
+  }
+
+  &__labelText {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--colorDarkGrey);
+    transition: all 0.1s;
+
+    &_blue {
+      color: var(--colorBlue);
+    }
+
+    &_transformed {
+      top: 10px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--colorBlack);
+    border: none;
+    background-color: transparent;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translate(0, -50%);
+    font-size: 20px;
+    color: var(--colorBlue);
+    transition: all 0.3s;
+
+    &_transformed {
+      transform: translate(0, -50%) rotate(180deg);
+    }
+  }
+
+  &__dropdown {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 1;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #242424;
+    box-shadow: 0 30px 60px rgb(23 23 23 / 8%);
+  }
+
+  &__dropdownItem {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    color: var(--colorWhite);
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--colorWhite);
+    border-radius: 6px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: var(--colorBlue);
+    }
+  }
+
+  &__button {
+    width: 100%;
+    max-width: 190px;
+    margin: 24px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .popupWishlist {
+    &__title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    &__image {
+      width: 42px;
+      height: auto;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 21px;
+      padding: 0 0 22px 0;
+    }
+
+    &__arrow {
+      right: 20px;
+      font-size: 16px;
+    }
+
+    &__button {
+      width: 100%;
+      max-width: unset;
+    }
+
+    .popup__cancel {
+      order: 2;
+      margin: 12px 0 0 0;
+    }
+  }
+}

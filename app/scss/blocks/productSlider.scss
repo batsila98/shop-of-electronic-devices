@@ -1,0 +1,266 @@
+.productSlider {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+
+  &__thumbnails {
+    width: 80px;
+    height: 560px;
+    padding: 0 0 20px 0;
+    margin: unset;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__thumbnailsInner {
+    z-index: 0;
+  }
+
+  &__slide {
+    &_current {
+      a {
+        border-color: var(--colorBlue);
+      }
+    }
+  }
+
+  &__slideLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid #ededed;
+  }
+
+  &__slideImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__navNext {
+    width: 100%;
+    height: 14px;
+    margin: 0;
+    top: unset;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, 0%);
+
+    svg {
+      z-index: 1;
+      position: absolute;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 70px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 0;
+      background: linear-gradient(0deg, white 40%, transparent);
+    }
+
+    &.swiper-button-disabled {
+      display: none;
+    }
+  }
+
+  &__navPrev {
+    width: 100%;
+    height: 14px;
+    margin: 0;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, 0%);
+
+    svg {
+      z-index: 1;
+      position: absolute;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 70px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 0;
+      background: linear-gradient(180deg, white 30%, transparent);
+    }
+
+    &.swiper-button-disabled {
+      display: none;
+    }
+  }
+
+  &__mainImages {
+    height: 598px;
+    width: 464px;
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__mainImage {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    &:first-child {
+      display: block;
+    }
+  }
+
+  &__zoomArea {
+    display: none;
+    width: 568px;
+    height: 100%;
+    top: 0;
+    left: calc(100% + 32px);
+    z-index: 1;
+    position: absolute;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+
+    .drift-zoom-pane {
+      background-color: #fff;
+    }
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .productSlider {
+    &__thumbnails {
+      height: 376px;
+    }
+
+    &__mainImages {
+      width: 322px;
+      height: 414px;
+      padding: 33px;
+    }
+
+    &__zoomArea {
+      width: 426px;
+      left: calc(100% + 30px);
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .productSlider {
+    justify-content: flex-start;
+
+    &__thumbnails {
+      height: 560px;
+    }
+
+    &__mainImages {
+      width: calc(100% - 100px);
+      height: 598px;
+      padding: 48px;
+      margin: 0 auto;
+    }
+
+    &__zoomArea {
+      width: 100%;
+      left: 0;
+      top: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .productSlider {
+    &__mainImages {
+      padding: 0 48px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .productSlider {
+    flex-direction: column-reverse;
+
+    &__thumbnails {
+      width: 100%;
+      height: 64px;
+      padding: 0;
+
+      &::after {
+        width: 64px;
+        height: 100%;
+        right: 0;
+        left: unset;
+        background: linear-gradient(270deg, #fff 40%, transparent);
+      }
+    }
+
+    &__navNext {
+      width: 70px;
+      height: 100%;
+      top: 0;
+      right: -38px;
+      left: unset;
+      justify-content: flex-end;
+
+      &:after {
+        background: linear-gradient(90deg, transparent, #fff 70%);
+      }
+
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
+
+    &__navPrev {
+      width: 70px;
+      height: 100%;
+      top: 0;
+      left: 34px;
+      right: unset;
+      justify-content: flex-start;
+
+      &:after {
+        background: linear-gradient(240deg, transparent, #fff 70%);
+      }
+
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
+
+    &__mainImages {
+      width: 100%;
+      height: 352px;
+      padding: 29px;
+    }
+
+    &__zoomArea {
+      top: calc(100% + 20px);
+    }
+  }
+}
+
+@media screen and (max-width: 475px) {
+}

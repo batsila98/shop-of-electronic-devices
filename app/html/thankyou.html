@@ -1,0 +1,60 @@
+@@include('./sections/header.html')
+
+<main class="pageThankyou">
+
+
+    <div class="container">
+        <div class="pageThankyou__content">
+            <img src="images/pages/thankyou/HandOneFinger.svg" alt=""
+                class="pageThankyou__icon pageThankyou__iconHandOne">
+            <img src="images/pages/thankyou/HandTwoFingers.svg" alt=""
+                class="pageThankyou__icon pageThankyou__iconHandTwo">
+            <img src="images/pages/thankyou/Baloon.svg" alt="" class="pageThankyou__icon pageThankyou__iconBalloon">
+
+            <div class="pageThankyou__imageWrapper">
+                <img src="images/pages/thankyou/Thankyou.png" alt="" class="pageThankyou__image">
+            </div>
+
+            <div class="pageThankyou__info">
+
+                <h1 class="pageThankyou__title">
+                    <span class="pageThankyou__name">Владислав,</span>
+                    Ваш заказ сформирован!
+                </h1>
+                <div class="pageThankyou__order">
+                    Номер заявки #
+                    <span class="pageThankyou__number">5324</span>
+                </div>
+                <div class="pageThankyou__text">
+                    <p>
+                        Вы можете следить за его выполнением из своего профиля в разделе Мои заказы, а так же вы будете
+                        получать уведомления на Вашу почту
+                        <a href="mailto:recodkin@gmail.com"
+                            class="pageThankyou__link pageThankyou__bold email">Recodkin@gmail.com</a>
+                    </p>
+                    <p>
+                        В ближайшее время с Вами свяжется наш менеджер для уточнения деталей заказа.
+                    </p>
+                    <p class="pageThankyou__bold">
+                        Благодарим Вас за покупку в нашем интернет-магазине.
+                    </p>
+                </div>
+                <a href="#" class="pageThankyou__button button buttonPrimary">
+                    Перейти на главную
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="pageThankyou__viewed">
+        @@include('./blocks/viewed.html')
+    </div>
+
+    <div class="pageThankyou__subscription">
+        @@include('./blocks/subscription.html')
+    </div>
+</main>
+
+@@include('./sections/footer.html')

@@ -1,0 +1,130 @@
+.search {
+  &__form {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    height: 48px;
+    display: block;
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--colorBlack);
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background-color: #f5f6fa;
+
+    &::placeholder {
+      color: var(--colorDarkGrey);
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__close,
+  &__clear {
+    display: none;
+  }
+
+  &__submit {
+    position: absolute;
+    top: 0;
+    right: 18px;
+    bottom: 0;
+    border: none;
+    background-color: transparent;
+
+    path {
+      transition: all 0.3s;
+    }
+
+    &:hover path {
+      fill: var(--colorBlue);
+    }
+  }
+
+  &__livesearch {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 3;
+    width: 100%;
+  }
+
+  &__empty {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .search {
+    &__form {
+      width: 100%;
+    }
+
+    &__submit,
+    &__close,
+    &__clear {
+      top: 0;
+      bottom: unset;
+      right: 0;
+      height: 48px;
+      width: 48px;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__submit {
+      display: none;
+    }
+
+    &__close,
+    &__clear {
+      position: absolute;
+      right: unset;
+      left: 0;
+      border: none;
+      background-color: transparent;
+    }
+
+    &__clear {
+      left: unset;
+      right: 0;
+      height: 48px;
+      width: 48px;
+    }
+
+    &__input {
+      padding: 15px 24px 15px 48px;
+    }
+
+    &__livesearch {
+      position: static;
+      padding: 12px 0 0 0;
+    }
+
+    &__empty {
+      display: block;
+    }
+
+    &__image {
+      margin: 0 auto 16px auto;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 21px;
+      color: var(--colorDarkGrey);
+    }
+  }
+}

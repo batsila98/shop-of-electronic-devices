@@ -1,0 +1,436 @@
+.footer {
+  color: var(--colorWhite);
+  padding: 64px 0 24px 0;
+  background-color: var(--colorBlack);
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__left {
+    width: 312px;
+  }
+
+  &__logo {
+    display: block;
+    margin: 0 0 46px 0;
+  }
+
+  &__logoImage {
+  }
+
+  &__socials {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__socialsTitle {
+    width: 100%;
+    margin: 0 0 12px 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.38);
+  }
+
+  &__socialsLink {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    transition: all 0.3s;
+
+    &:hover {
+      border-color: var(--colorWhite);
+    }
+
+    &:active {
+      border-color: var(--colorWhite);
+      background-color: var(--colorWhite);
+
+      svg path {
+        fill: var(--colorBlack);
+      }
+    }
+  }
+
+  &__menu {
+    &Catalog {
+      width: 208px;
+    }
+
+    &Services {
+      width: 312px;
+      padding: 0 100px 0 0;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    margin: 0 0 24px 0;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+  }
+
+  &__link {
+    display: block;
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.38);
+    transition: all 0.3s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__contacts {
+    width: 384px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__copy {
+    margin: 0 0 0 6px;
+  }
+
+  &__address {
+    margin: 0 0 24px 0;
+  }
+
+  &__addressTitle {
+    width: 100%;
+    margin: 0 0 4px 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.38);
+  }
+
+  &__addressValue {
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.38);
+  }
+
+  &__addressBold {
+    color: var(--colorWhite);
+  }
+
+  &__communications {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__communicationsItem {
+  }
+
+  &__communicationsTitle {
+    width: 100%;
+    margin: 0 0 4px 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.38);
+  }
+
+  &__communicationsLink {
+    color: var(--colorWhite);
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  &__schedule {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px 0 0 0;
+  }
+
+  &__scheduleTitle {
+    width: 100%;
+    margin: 0 0 4px 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.38);
+  }
+
+  &__scheduleWorktime {
+    width: 100%;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+  }
+
+  &__scheduleDays {
+    width: 100%;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.38);
+  }
+
+  // start bottom part
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 64px 0 0 0;
+    padding: 24px 0 0 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.12);
+  }
+
+  &__matviez {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  &__designed {
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.38);
+  }
+
+  &__payments {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__paymentsImage {
+    margin: 0 0 0 8px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .footer {
+    padding: 32px 0 24px 0;
+
+    &__left {
+      width: 100%;
+      padding: 0 0 20px 0;
+      margin: 0 0 32px 0;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      margin: 0;
+    }
+
+    &__logoImage {
+      width: 128px;
+    }
+
+    &__socials {
+      align-items: center;
+    }
+
+    &__socialsTitle {
+      width: auto;
+      margin: 0 4px 0 0;
+    }
+
+    &__socialsLink {
+      margin: 0 0 0 8px;
+    }
+
+    &__menu {
+      &Catalog {
+        width: 240px;
+      }
+
+      &Services {
+        width: 320px;
+        padding: 0;
+      }
+    }
+
+    &__contacts {
+      width: 370px;
+    }
+
+    &__communicationsItem {
+      width: 100%;
+    }
+
+    &__communicationsPhone {
+      margin: 0 0 24px 0;
+    }
+
+    &__bottom {
+      margin: 32px 0 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .footer {
+    padding: 48px 0 24px 0;
+
+    &__top {
+      align-items: flex-start;
+      justify-content: flex-end;
+    }
+
+    &__left {
+      width: 34.5%;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__logo {
+      margin: 0 0 32px 0;
+    }
+
+    &__socialsTitle {
+      width: 100%;
+      margin: 0 0 12px 0;
+    }
+
+    &__socialsLink {
+      margin: 0 8px 0 0;
+    }
+
+    &__menu {
+      &Catalog {
+        width: 34.5%;
+      }
+
+      &Services {
+        width: 31%;
+      }
+    }
+
+    &__contacts {
+      width: 65.5%;
+      padding: 32px 0 0 0;
+      margin: 20px 0 0 0;
+      border-top: 2px solid rgba(255, 255, 255, 0.12);
+    }
+
+    &__communications {
+      width: 53%;
+    }
+
+    &__schedule {
+      width: 47%;
+      margin: 0;
+      align-content: flex-start;
+    }
+
+    &__scheduleWorktime {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__bottom {
+      margin: 48px 0 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 32px 0;
+
+    &__left {
+      width: 100%;
+      padding: 0 0 32px 0;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+    }
+
+    &__logo {
+      width: 100%;
+      margin: 0 0 22px 0;
+    }
+
+    &__logoImage {
+      width: 124px;
+    }
+
+    &__menu {
+      &Catalog {
+        width: 100%;
+        padding: 32px 0;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+      }
+
+      &Services {
+        width: 100%;
+        padding: 32px 0;
+      }
+    }
+
+    &__contacts {
+      width: 100%;
+      margin: 0;
+    }
+
+    &__link {
+      margin: 0 0 12px 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    &__address {
+      max-width: 500px;
+    }
+
+    &__addressValue {
+      letter-spacing: 0.3px;
+    }
+
+    &__bottom {
+      margin: 32px 0 0 0;
+      padding: 32px 0 0 0;
+    }
+
+    &__matviez {
+      margin: 0 0 12px 0;
+    }
+
+    &__reserved {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .footer {
+    &__communications {
+      width: 100%;
+      margin: 0 0 24px 0;
+    }
+
+    &__schedule {
+      width: 100%;
+    }
+
+    &__copyright {
+      width: 100%;
+      margin: 0 0 32px 0;
+    }
+
+    &__paymentsImage {
+      margin: 0 8px 0 0;
+    }
+  }
+}

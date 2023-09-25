@@ -1,0 +1,171 @@
+.button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 21px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &Copy {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &:hover {
+      svg path {
+        fill: var(--colorBlue);
+        fill-opacity: 1;
+      }
+    }
+
+    &__message {
+      display: none;
+      position: absolute;
+      left: -55px;
+      bottom: 34px;
+      padding: 7px 16px;
+      color: var(--colorWhite);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      border-radius: 4px;
+      background-color: var(--colorBlue);
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 72%;
+        left: 50%;
+        transform: translate(-50%, 0) rotate(45deg);
+        border-radius: 10px 4px 4px 4px;
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: var(--colorBlue);
+      }
+    }
+  }
+
+  &Primary {
+    width: fit-content;
+    height: 48px;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: var(--colorWhite);
+    border-radius: 100px;
+    border: 2px solid var(--colorBlue);
+    background-color: var(--colorBlue);
+    transition: border 0.3s, color 0.3s, background-color 0.3s;
+
+    &:hover {
+      color: var(--colorBlue);
+      background-color: transparent;
+
+      svg {
+        path {
+          fill: var(--colorBlue);
+        }
+      }
+    }
+
+    &:active {
+      padding-top: 2px;
+    }
+
+    &_high {
+      height: 60px;
+      border-radius: 12px;
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+
+  &Secondary {
+    width: fit-content;
+    height: 48px;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: var(--colorBlue);
+    border-radius: 100px;
+    border: 2px solid var(--colorLightGrey);
+    background-color: transparent;
+    transition: border 0.3s, color 0.3s, background-color 0.3s;
+
+    &:hover {
+      border-color: var(--colorBlue);
+    }
+
+    &:active {
+      padding-top: 2px;
+    }
+  }
+
+  &Square {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 2px solid var(--colorLightGrey);
+    transition: border 0.3s, color 0.3s, background-color 0.3s;
+
+    &:hover {
+      border-color: var(--colorBlue);
+
+      svg {
+        path {
+          fill: var(--colorBlue);
+        }
+      }
+    }
+
+    &:active {
+      padding-top: 2px;
+    }
+  }
+}
+
+.addToWishlist,
+.addToComparison {
+  &_bgBlue {
+    border-color: rgba(55, 125, 255, 0.08);
+    background-color: rgba(55, 125, 255, 0.08);
+
+    svg {
+      path {
+        fill: var(--colorBlue);
+      }
+    }
+  }
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

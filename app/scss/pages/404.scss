@@ -1,0 +1,110 @@
+.pageNotFound {
+  background-color: #f5f5f7;
+
+  &__content {
+    text-align: center;
+    padding: 126px 0;
+    color: var(--colorBlack);
+    border-bottom: 2px solid var(--colorLightGrey);
+  }
+
+  &__image {
+    height: 284px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &__title {
+    margin: 14px 0 12px 0;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  &__text {
+    margin: 0 0 32px 0;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--colorDarkGrey);
+  }
+
+  &__link {
+    margin: 0 auto;
+  }
+
+  // general sections
+  &__viewed {
+    padding: 96px 0 64px 0;
+  }
+
+  &__subscription {
+    padding: 0 0 88px 0;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .pageNotFound {
+    &__content {
+      padding: 70px 0 96px 0;
+    }
+
+    &__image {
+      width: auto;
+      height: 181px;
+    }
+
+    &__viewed {
+      padding: 64px 0 32px 0;
+    }
+
+    &__subscription {
+      padding: 0 0 64px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pageNotFound {
+    &__content {
+      padding: 64px 0;
+    }
+
+    &__image {
+      height: 145px;
+    }
+
+    &__subscription {
+      padding: 0 0 64px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pageNotFound {
+    &__content {
+      padding: 48px 0;
+    }
+
+    &__image {
+      height: 100px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 31px;
+    }
+
+    &__subscription {
+      padding: 0 0 48px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .pageNotFound {
+    &__link {
+      width: 100%;
+      max-width: 360px;
+    }
+  }
+}

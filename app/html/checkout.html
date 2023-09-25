@@ -1,0 +1,769 @@
+@@include('./sections/headerCheckout.html')
+
+<main class="pageCheckout">
+    <div class="pageCheckout__content">
+
+        <form action="" id="checkoutForm" class="pageCheckout__form">
+            <div class="pageCheckout__section checkoutContacts">
+                <h2 class="pageCheckout__title">
+                    <svg class="pageCheckout__icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="12" fill="#171717" />
+                        <path
+                            d="M27 26.8571H31.6667C31.8333 26.8571 32 26.7232 32 26.5V25.7857C32 25.6071 31.8333 25.4286 31.6667 25.4286H27C26.7917 25.4286 26.6667 25.6071 26.6667 25.7857V26.5C26.6667 26.7232 26.7917 26.8571 27 26.8571ZM27 24H31.6667C31.8333 24 32 23.8661 32 23.6429V22.9286C32 22.75 31.8333 22.5714 31.6667 22.5714H27C26.7917 22.5714 26.6667 22.75 26.6667 22.9286V23.6429C26.6667 23.8661 26.7917 24 27 24ZM27 29.7143H31.6667C31.8333 29.7143 32 29.5804 32 29.3571V28.6429C32 28.4643 31.8333 28.2857 31.6667 28.2857H27C26.7917 28.2857 26.6667 28.4643 26.6667 28.6429V29.3571C26.6667 29.5804 26.7917 29.7143 27 29.7143ZM20 28.2857C21.8333 28.2857 23.3333 26.7232 23.3333 24.7143C23.3333 22.75 21.8333 21.1429 20 21.1429C18.125 21.1429 16.6667 22.75 16.6667 24.7143C16.6667 26.7232 18.125 28.2857 20 28.2857ZM20 22.5714C21.0833 22.5714 22 23.5536 22 24.7143C22 25.9196 21.0833 26.8571 20 26.8571C18.875 26.8571 18 25.9196 18 24.7143C18 23.5536 18.875 22.5714 20 22.5714ZM33.3333 14H14.6667C13.1667 14 12 15.2946 12 16.8571V31.1429C12 32.75 13.1667 34 14.6667 34H33.3333C34.7917 34 36 32.75 36 31.1429V16.8571C36 15.2946 34.7917 14 33.3333 14ZM23.3333 32.5714H16.6667V31.9018C16.6667 31.5893 16.75 31.3214 16.9167 31.0536C17.125 30.6518 17.5417 30.4732 18.0417 30.4732C18.5417 30.4732 18.9167 30.7857 20 30.7857C21.0833 30.7857 21.4167 30.4732 21.9167 30.4732C22.4167 30.4732 22.8333 30.6964 23.0833 31.0536C23.25 31.3214 23.3333 31.5893 23.3333 31.9018V32.5714ZM34.6667 31.1429C34.6667 31.9464 34.0417 32.5714 33.3333 32.5714H24.6667V31.9018C24.6667 31.2768 24.4583 30.7411 24.1667 30.25C23.6667 29.4464 22.7917 29 21.9167 29C21.125 29 20.9167 29.3125 20 29.3125C19.0417 29.3125 18.8333 29 18.0417 29C17.1667 29 16.2917 29.4464 15.7917 30.25C15.5 30.7411 15.3333 31.2768 15.3333 31.9018V32.5714H14.6667C13.9167 32.5714 13.3333 31.9464 13.3333 31.1429V19.7143H34.6667V31.1429ZM34.6667 18.2857H13.3333V16.8571C13.3333 16.0982 13.9167 15.4286 14.6667 15.4286H33.3333C34.0417 15.4286 34.6667 16.0982 34.6667 16.8571V18.2857Z"
+                            fill="white" />
+                    </svg>
+                    Ваши контакты
+                </h2>
+                <label class="checkoutContacts__label">
+                    <span class="checkoutContacts__labelText">
+                        Имя
+                    </span>
+                    <input type="text" name="name" class="checkoutContacts__input">
+                </label>
+                <label class="checkoutContacts__label">
+                    <span class="checkoutContacts__labelText">
+                        Фамилия
+                    </span>
+                    <input type="text" name="surname" class="checkoutContacts__input">
+                </label>
+                <label class="checkoutContacts__label">
+                    <span class="checkoutContacts__labelText">
+                        Ваш номер телефона
+                    </span>
+                    <input type="tel" name="phone" class="checkoutContacts__input" maxlength="19">
+                </label>
+                <label class="checkoutContacts__label">
+                    <span class="checkoutContacts__labelText">
+                        Ваш email
+                    </span>
+                    <input type="email" name="email" class="checkoutContacts__input">
+                </label>
+            </div>
+
+            <div class="pageCheckout__section checkoutOrder">
+                <h2 class="pageCheckout__title">
+                    <svg class="pageCheckout__icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="12" fill="#171717" />
+                        <path
+                            d="M33.9785 16.625H16.3797L16.0044 14.8203C15.921 14.3691 15.504 14 15.0452 14H11.5004C11.2085 14 11 14.2461 11 14.4922V14.8203C11 15.1074 11.2085 15.3125 11.5004 15.3125H14.7533L17.6725 30.6113C17.2555 31.1035 17.0053 31.7188 17.0053 32.375C17.0053 33.8516 18.173 35 19.6743 35C21.1339 35 22.3433 33.8516 22.3433 32.375C22.3433 32.0059 22.1765 31.4316 21.968 31.0625H28.015C27.8064 31.4316 27.6813 32.0059 27.6813 32.375C27.6813 33.8516 28.849 35 30.3503 35C31.81 35 33.0194 33.8516 33.0194 32.375C33.0194 31.6777 32.6857 30.9805 32.1853 30.5293C32.1019 30.0781 31.6848 29.75 31.2261 29.75H18.8819L18.3815 27.125H32.1853C32.6857 27.125 33.0611 26.8379 33.1862 26.3457L34.9794 17.8145C35.1045 17.1992 34.6458 16.625 33.9785 16.625ZM21.0088 32.375C21.0088 33.1133 20.3832 33.6875 19.6743 33.6875C18.9236 33.6875 18.3398 33.1133 18.3398 32.375C18.3398 31.6777 18.9236 31.0625 19.6743 31.0625C20.3832 31.0625 21.0088 31.6777 21.0088 32.375ZM30.3503 33.6875C29.5997 33.6875 29.0158 33.1133 29.0158 32.375C29.0158 31.6777 29.5997 31.0625 30.3503 31.0625C31.0593 31.0625 31.6848 31.6777 31.6848 32.375C31.6848 33.1133 31.0593 33.6875 30.3503 33.6875ZM31.9351 25.8125H18.1313L16.6299 17.9375H33.6032L31.9351 25.8125Z"
+                            fill="white" />
+                    </svg>
+                    Ваш заказ
+                </h2>
+
+                <div class="checkoutOrder__product checkoutProduct">
+                    <div class="checkoutProduct__preview">
+                        <div class="checkoutProduct__imageWrapper">
+                            <img src="images/pages/checkout/CheckoutImage3.png" alt="" class="checkoutProduct__image">
+                        </div>
+                        <div class="checkoutProduct__name">
+                            Apple iPhone 12 mini
+                            <div class="checkoutProduct__type">
+                                64GB (Red)
+                            </div>
+                        </div>
+                        <button class="checkoutProduct__remove button buttonSquare">
+                            <svg class="checkoutProduct__icon" width="18" height="21" viewBox="0 0 18 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.125 3.625H13.8828L12.5547 1.4375C12.2422 0.929688 11.5391 0.5 10.9531 0.5H7.00781C6.42188 0.5 5.71875 0.929688 5.40625 1.4375L4.07812 3.625H0.875C0.523438 3.625 0.25 3.9375 0.25 4.25V4.875C0.25 5.22656 0.523438 5.5 0.875 5.5H1.5L2.32031 18.7422C2.35938 19.7188 3.21875 20.5 4.19531 20.5H13.7656C14.7422 20.5 15.6016 19.7188 15.6406 18.7422L16.5 5.5H17.125C17.4375 5.5 17.75 5.22656 17.75 4.875V4.25C17.75 3.9375 17.4375 3.625 17.125 3.625ZM7.00781 2.375H10.9531L11.6953 3.625H6.26562L7.00781 2.375ZM13.7656 18.625H4.19531L3.375 5.5H14.5859L13.7656 18.625Z"
+                                    fill="#A7A7A7" />
+                            </svg>
+                            <span class="checkoutProduct__removeText">
+                                Удалить
+                            </span>
+                        </button>
+                    </div>
+                    <div class="checkoutProduct__info">
+                        <div class="checkoutProduct__price">
+                            <div class="checkoutProduct__priceTitle">
+                                Цена товара:
+                            </div>
+                            <div class="checkoutProduct__priceValue">
+                                22 500
+                                <span class="checkoutProduct__priceCurrency">
+                                    ₴
+                                </span>
+                            </div>
+                        </div>
+                        <div class="checkoutProduct__quantity">
+                            <div class="checkoutProduct__quantityContent">
+                                <button class="checkoutProduct__quantityButton checkoutProduct__quantitySubtract">
+                                    <svg class="checkoutProduct__quantityIcon" width="16" height="2" viewBox="0 0 16 2"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.6667 0C6.27206 0 9.16718 0 0.333333 0C0.125 0 0 0.166667 0 0.333333V1.66667C0 1.875 0.125 2 0.333333 2C9.17153 2 6.26694 2 15.6667 2C15.8333 2 16 1.875 16 1.66667V0.333333C16 0.166667 15.8333 0 15.6667 0Z"
+                                            fill="#A7A7A7" />
+                                    </svg>
+                                </button>
+                                <div class="checkoutProduct__quantityForm">
+                                    <div class="checkoutProduct__quantityTitle">
+                                        Количество
+                                    </div>
+                                    <input type="number" name="quantity" value="1"
+                                        class="checkoutProduct__quantityInput">
+                                    <span class="checkoutProduct__quantityUnit">
+                                        шт.
+                                    </span>
+                                </div>
+                                <button
+                                    class="checkoutProduct__quantityButton checkoutProduct__quantityButton_enabled checkoutProduct__quantityAdd">
+                                    <svg class="checkoutProduct__quantityIcon" width="16" height="16"
+                                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.6667 7H9V0.333333C9 0.166667 8.83333 0 8.66667 0H7.33333C7.125 0 7 0.166667 7 0.333333V7H0.333333C0.125 7 0 7.16667 0 7.33333V8.66667C0 8.875 0.125 9 0.333333 9H7V15.6667C7 15.875 7.125 16 7.33333 16H8.66667C8.83333 16 9 15.875 9 15.6667V9H15.6667C15.8333 9 16 8.875 16 8.66667V7.33333C16 7.16667 15.8333 7 15.6667 7Z"
+                                            fill="#377DFF" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="checkoutProduct__sum">
+                            <div class="checkoutProduct__sumTitle">
+                                Сумма:
+                            </div>
+                            <div class="checkoutProduct__sumPrice">
+                                22 500
+                                <span class="checkoutProduct__sumCurrency">
+                                    ₴
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkoutOrder__product checkoutProduct">
+                    <div class="checkoutProduct__preview">
+                        <div class="checkoutProduct__imageWrapper">
+                            <img src="images/pages/checkout/CheckoutImage1.png" alt="" class="checkoutProduct__image">
+                        </div>
+                        <div class="checkoutProduct__name">
+                            Apple iPhone 12 mini
+                            <div class="checkoutProduct__type">
+                                64GB (Red)
+                            </div>
+                        </div>
+                        <button class="checkoutProduct__remove button buttonSquare">
+                            <svg class="checkoutProduct__icon" width="18" height="21" viewBox="0 0 18 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.125 3.625H13.8828L12.5547 1.4375C12.2422 0.929688 11.5391 0.5 10.9531 0.5H7.00781C6.42188 0.5 5.71875 0.929688 5.40625 1.4375L4.07812 3.625H0.875C0.523438 3.625 0.25 3.9375 0.25 4.25V4.875C0.25 5.22656 0.523438 5.5 0.875 5.5H1.5L2.32031 18.7422C2.35938 19.7188 3.21875 20.5 4.19531 20.5H13.7656C14.7422 20.5 15.6016 19.7188 15.6406 18.7422L16.5 5.5H17.125C17.4375 5.5 17.75 5.22656 17.75 4.875V4.25C17.75 3.9375 17.4375 3.625 17.125 3.625ZM7.00781 2.375H10.9531L11.6953 3.625H6.26562L7.00781 2.375ZM13.7656 18.625H4.19531L3.375 5.5H14.5859L13.7656 18.625Z"
+                                    fill="#A7A7A7" />
+                            </svg>
+                            <span class="checkoutProduct__removeText">
+                                Удалить
+                            </span>
+                        </button>
+                    </div>
+                    <div class="checkoutProduct__info">
+                        <div class="checkoutProduct__price">
+                            <div class="checkoutProduct__priceTitle">
+                                Цена товара:
+                            </div>
+                            <div class="checkoutProduct__priceValue">
+                                22 500
+                                <span class="checkoutProduct__priceCurrency">
+                                    ₴
+                                </span>
+                            </div>
+                        </div>
+                        <div class="checkoutProduct__quantity">
+                            <div class="checkoutProduct__quantityContent">
+                                <button class="checkoutProduct__quantityButton checkoutProduct__quantitySubtract">
+                                    <svg class="checkoutProduct__quantityIcon" width="16" height="2" viewBox="0 0 16 2"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.6667 0C6.27206 0 9.16718 0 0.333333 0C0.125 0 0 0.166667 0 0.333333V1.66667C0 1.875 0.125 2 0.333333 2C9.17153 2 6.26694 2 15.6667 2C15.8333 2 16 1.875 16 1.66667V0.333333C16 0.166667 15.8333 0 15.6667 0Z"
+                                            fill="#A7A7A7" />
+                                    </svg>
+                                </button>
+                                <div class="checkoutProduct__quantityForm">
+                                    <div class="checkoutProduct__quantityTitle">
+                                        Количество
+                                    </div>
+                                    <input type="number" name="quantity" value="1"
+                                        class="checkoutProduct__quantityInput">
+                                    <span class="checkoutProduct__quantityUnit">
+                                        шт.
+                                    </span>
+                                </div>
+                                <button
+                                    class="checkoutProduct__quantityButton checkoutProduct__quantityButton_enabled checkoutProduct__quantityAdd">
+                                    <svg class="checkoutProduct__quantityIcon" width="16" height="16"
+                                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.6667 7H9V0.333333C9 0.166667 8.83333 0 8.66667 0H7.33333C7.125 0 7 0.166667 7 0.333333V7H0.333333C0.125 7 0 7.16667 0 7.33333V8.66667C0 8.875 0.125 9 0.333333 9H7V15.6667C7 15.875 7.125 16 7.33333 16H8.66667C8.83333 16 9 15.875 9 15.6667V9H15.6667C15.8333 9 16 8.875 16 8.66667V7.33333C16 7.16667 15.8333 7 15.6667 7Z"
+                                            fill="#377DFF" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="checkoutProduct__sum">
+                            <div class="checkoutProduct__sumTitle">
+                                Сумма:
+                            </div>
+                            <div class="checkoutProduct__sumPrice">
+                                22 500
+                                <span class="checkoutProduct__sumCurrency">
+                                    ₴
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkoutOrder__product checkoutProduct">
+                    <div class="checkoutProduct__preview">
+                        <div class="checkoutProduct__imageWrapper">
+                            <img src="images/pages/checkout/CheckoutImage2.png" alt="" class="checkoutProduct__image">
+                        </div>
+                        <div class="checkoutProduct__name">
+                            Apple iPhone 12 mini
+                            <div class="checkoutProduct__type">
+                                64GB (Red)
+                            </div>
+                        </div>
+                        <button class="checkoutProduct__remove button buttonSquare">
+                            <svg class="checkoutProduct__icon" width="18" height="21" viewBox="0 0 18 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.125 3.625H13.8828L12.5547 1.4375C12.2422 0.929688 11.5391 0.5 10.9531 0.5H7.00781C6.42188 0.5 5.71875 0.929688 5.40625 1.4375L4.07812 3.625H0.875C0.523438 3.625 0.25 3.9375 0.25 4.25V4.875C0.25 5.22656 0.523438 5.5 0.875 5.5H1.5L2.32031 18.7422C2.35938 19.7188 3.21875 20.5 4.19531 20.5H13.7656C14.7422 20.5 15.6016 19.7188 15.6406 18.7422L16.5 5.5H17.125C17.4375 5.5 17.75 5.22656 17.75 4.875V4.25C17.75 3.9375 17.4375 3.625 17.125 3.625ZM7.00781 2.375H10.9531L11.6953 3.625H6.26562L7.00781 2.375ZM13.7656 18.625H4.19531L3.375 5.5H14.5859L13.7656 18.625Z"
+                                    fill="#A7A7A7" />
+                            </svg>
+                            <span class="checkoutProduct__removeText">
+                                Удалить
+                            </span>
+                        </button>
+                    </div>
+                    <div class="checkoutProduct__info">
+                        <div class="checkoutProduct__price">
+                            <div class="checkoutProduct__priceTitle">
+                                Цена товара:
+                            </div>
+                            <div class="checkoutProduct__priceValue">
+                                22 500
+                                <span class="checkoutProduct__priceCurrency">
+                                    ₴
+                                </span>
+                            </div>
+                        </div>
+                        <div class="checkoutProduct__quantity">
+                            <div class="checkoutProduct__quantityContent">
+                                <button class="checkoutProduct__quantityButton checkoutProduct__quantitySubtract">
+                                    <svg class="checkoutProduct__quantityIcon" width="16" height="2" viewBox="0 0 16 2"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.6667 0C6.27206 0 9.16718 0 0.333333 0C0.125 0 0 0.166667 0 0.333333V1.66667C0 1.875 0.125 2 0.333333 2C9.17153 2 6.26694 2 15.6667 2C15.8333 2 16 1.875 16 1.66667V0.333333C16 0.166667 15.8333 0 15.6667 0Z"
+                                            fill="#A7A7A7" />
+                                    </svg>
+                                </button>
+                                <div class="checkoutProduct__quantityForm">
+                                    <div class="checkoutProduct__quantityTitle">
+                                        Количество
+                                    </div>
+                                    <input type="number" name="quantity" value="1"
+                                        class="checkoutProduct__quantityInput">
+                                    <span class="checkoutProduct__quantityUnit">
+                                        шт.
+                                    </span>
+                                </div>
+                                <button
+                                    class="checkoutProduct__quantityButton checkoutProduct__quantityButton_enabled checkoutProduct__quantityAdd">
+                                    <svg class="checkoutProduct__quantityIcon" width="16" height="16"
+                                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.6667 7H9V0.333333C9 0.166667 8.83333 0 8.66667 0H7.33333C7.125 0 7 0.166667 7 0.333333V7H0.333333C0.125 7 0 7.16667 0 7.33333V8.66667C0 8.875 0.125 9 0.333333 9H7V15.6667C7 15.875 7.125 16 7.33333 16H8.66667C8.83333 16 9 15.875 9 15.6667V9H15.6667C15.8333 9 16 8.875 16 8.66667V7.33333C16 7.16667 15.8333 7 15.6667 7Z"
+                                            fill="#377DFF" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="checkoutProduct__sum">
+                            <div class="checkoutProduct__sumTitle">
+                                Сумма:
+                            </div>
+                            <div class="checkoutProduct__sumPrice">
+                                22 500
+                                <span class="checkoutProduct__sumCurrency">
+                                    ₴
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pageCheckout__section checkoutShipping">
+                <h2 class="pageCheckout__title">
+                    <svg class="pageCheckout__icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="12" fill="#171717" />
+                        <path
+                            d="M35.7 28.4588H34.8V24.3294C34.8 23.7176 34.5375 23.0676 34.0875 22.6088L30.9375 19.3971C30.4875 18.9382 29.8875 18.6706 29.25 18.6706H27.6V16.7971C27.6 15.8029 26.7375 15 25.725 15H13.8375C12.825 15 12 15.8029 12 16.7971V27.9235C12 28.9176 12.825 29.6824 13.8375 29.6824H14.4375C14.4 29.9118 14.4 30.1029 14.4 30.2941C14.4 32.0147 15.7125 33.3529 17.4 33.3529C19.05 33.3529 20.4 32.0147 20.4 30.2941C20.4 30.1029 20.3625 29.9118 20.325 29.6824H27.6375C27.6 29.9118 27.6 30.1029 27.6 30.2941C27.6 32.0147 28.9125 33.3529 30.6 33.3529C32.25 33.3529 33.6 32.0147 33.6 30.2941C33.6 30.1029 33.5625 29.9118 33.525 29.6824H35.7C35.85 29.6824 36 29.5676 36 29.3765V28.7647C36 28.6118 35.85 28.4588 35.7 28.4588ZM29.25 19.8941C29.55 19.8941 29.85 20.0471 30.075 20.2765L33.225 23.4882C33.2625 23.5265 33.2625 23.5647 33.3 23.6029H27.6V19.9324H29.25V19.8941ZM17.4 32.1294C16.3875 32.1294 15.6 31.3265 15.6 30.2941C15.6 29.3 16.3875 28.4588 17.4 28.4588C18.375 28.4588 19.2 29.3 19.2 30.2941C19.2 31.3265 18.375 32.1294 17.4 32.1294ZM19.7625 28.4588C19.2375 27.7324 18.375 27.2353 17.4 27.2353C16.425 27.2353 15.5625 27.7324 15 28.4588H13.8375C13.4625 28.4588 13.2 28.2294 13.2 27.9235V16.7971C13.2 16.4912 13.4625 16.2235 13.8375 16.2235H25.725C26.1 16.2235 26.4 16.4912 26.4 16.7971V28.4588H19.7625ZM30.6 32.1294C29.5875 32.1294 28.8 31.3265 28.8 30.2941C28.8 29.3 29.5875 28.4588 30.6 28.4588C31.575 28.4588 32.4 29.3 32.4 30.2941C32.4 31.3265 31.575 32.1294 30.6 32.1294ZM30.6 27.2353C29.5875 27.2353 28.7625 27.7324 28.2 28.4588H27.6V24.7882H33.6V28.4588H32.9625C32.4375 27.7324 31.575 27.2353 30.6 27.2353Z"
+                            fill="white" />
+                    </svg>
+                    Доставка
+                </h2>
+                <h3 class="pageCheckout__subtitle">
+                    Способ доставки
+                </h3>
+
+                <div class="checkoutShipping__row">
+                    <input type="radio" name="shipping" value="shipping_nova_poshta" id="shipping_nova_poshta"
+                        class="checkoutShipping__radio">
+                    <label for="shipping_nova_poshta" class="checkoutShipping__label">
+                        <div class="checkoutShipping__mark"></div>
+                        <div class="checkoutShipping__name">
+                            Самовывоз из Новой Почты
+                        </div>
+                    </label>
+                    <div class="checkoutShipping__price">
+                        <div class="checkoutShipping__priceTitle">
+                            Стоимость
+                        </div>
+                        <div class="checkoutShipping__priceValue">
+                            240
+                            <span class="checkoutShipping__priceCurrency">
+                                ₴
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="checkoutShipping__form checkoutSubForm">
+                        <label class="checkoutShipping__inputLabel">
+                            <span class="checkoutShipping__labelText">
+                                Ваш населенный пункт
+                            </span>
+                            <input type="text" name="locality" class="checkoutShipping__input">
+                        </label>
+
+                        <label class="checkoutShipping__inputLabel">
+                            <span class="checkoutShipping__labelText">
+                                Номер отделения
+                            </span>
+                            <input type="text" name="office" class="checkoutShipping__input">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="checkoutShipping__row">
+                    <input type="radio" name="shipping" value="shipping_pickup" id="shipping_pickup"
+                        class="checkoutShipping__radio">
+                    <label for="shipping_pickup" class="checkoutShipping__label">
+                        <div class="checkoutShipping__mark"></div>
+                        <div class="checkoutShipping__name">
+                            Самовывоз из точки выдачи г. Полтава
+                            <div class="checkoutShipping__text">
+                                г. Полтава, ул. Котляревского 1/27, Бизнес Центр ЕРА, 3 этаж, офис 300
+                            </div>
+                        </div>
+                    </label>
+                    <div class="checkoutShipping__price">
+                        <div class="checkoutShipping__priceTitle">
+                            Стоимость
+                        </div>
+                        <div class="checkoutShipping__priceValue checkoutShipping__priceValue_blue">
+                            Бесплатно
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkoutShipping__row">
+                    <input type="radio" name="shipping" value="shipping_courier" id="shipping_courier"
+                        class="checkoutShipping__radio">
+                    <label for="shipping_courier" class="checkoutShipping__label">
+                        <div class="checkoutShipping__mark"></div>
+                        <div class="checkoutShipping__name">
+                            Доставка по городу Полтава
+                        </div>
+                    </label>
+                    <div class="checkoutShipping__price">
+                        <div class="checkoutShipping__priceTitle">
+                            Стоимость
+                        </div>
+                        <div class="checkoutShipping__priceValue checkoutShipping__priceValue_blue">
+                            Бесплатно
+                        </div>
+                    </div>
+
+                    <div class="checkoutShipping__form checkoutSubForm">
+                        <label class="checkoutShipping__inputLabel checkoutShipping__inputLabel_wide">
+                            <span class="checkoutShipping__labelText">
+                                Адресс
+                            </span>
+                            <input type="text" name="address" class="checkoutShipping__input">
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pageCheckout__section checkoutPayment">
+                <h2 class="pageCheckout__title">
+                    <svg class="pageCheckout__icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="12" fill="#171717" />
+                        <path
+                            d="M34 15H14C12.875 15 12 15.8643 12 16.8857V30.7143C12 31.775 12.875 32.6 14 32.6H34C35.0833 32.6 36 31.775 36 30.7143V16.8857C36 15.8643 35.0833 15 34 15ZM14 16.2571H34C34.3333 16.2571 34.6667 16.5714 34.6667 16.8857V18.7714H13.3333V16.8857C13.3333 16.5714 13.625 16.2571 14 16.2571ZM34 31.3429H14C13.625 31.3429 13.3333 31.0679 13.3333 30.7143V22.5429H34.6667V30.7143C34.6667 31.0679 34.3333 31.3429 34 31.3429ZM20 28.0429C20 27.8071 19.75 27.5714 19.5 27.5714H16.5C16.2083 27.5714 16 27.8071 16 28.0429V28.3571C16 28.6321 16.2083 28.8286 16.5 28.8286H19.5C19.75 28.8286 20 28.6321 20 28.3571V28.0429ZM28 28.0429C28 27.8071 27.75 27.5714 27.5 27.5714H21.8333C21.5417 27.5714 21.3333 27.8071 21.3333 28.0429V28.3571C21.3333 28.6321 21.5417 28.8286 21.8333 28.8286H27.5C27.75 28.8286 28 28.6321 28 28.3571V28.0429Z"
+                            fill="white" />
+                    </svg>
+                    Оплата
+                </h2>
+
+                <div class="checkoutPayment__row">
+                    <input type="radio" name="payment" value="payment_upon_receipt" id="payment_upon_receipt"
+                        class="checkoutPayment__radio">
+                    <label for="payment_upon_receipt" class="checkoutPayment__label">
+                        <div class="checkoutPayment__mark"></div>
+                        <div class="checkoutPayment__name">
+                            Оплата при получении
+                        </div>
+                    </label>
+                    <div class="checkoutPayment__price">
+                        <div class="checkoutPayment__priceTitle">
+                            Предоплата
+                        </div>
+                        <div class="checkoutPayment__priceValue">
+                            300
+                            <span class="checkoutPayment__priceCurrency">
+                                ₴
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="checkoutPayment__form checkoutSubForm">
+                        <div class="checkoutPayment__note">
+                            <svg class="checkoutPayment__noteIcon" width="64" height="64" viewBox="0 0 64 64"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32 4.12903C47.2258 4.12903 59.871 16.6452 59.871 32C59.871 47.4839 47.3548 59.871 32 59.871C16.5161 59.871 4.12903 47.4839 4.12903 32C4.12903 16.6452 16.5161 4.12903 32 4.12903ZM32 0C14.3226 0 0 14.4516 0 32C0 49.6774 14.3226 64 32 64C49.5484 64 64 49.6774 64 32C64 14.4516 49.5484 0 32 0ZM27.3548 44.3871C26.4516 44.3871 25.8064 45.1613 25.8064 45.9355V46.9677C25.8064 47.871 26.4516 48.5161 27.3548 48.5161H36.6452C37.4194 48.5161 38.1935 47.871 38.1935 46.9677V45.9355C38.1935 45.1613 37.4194 44.3871 36.6452 44.3871H35.0968V26.3226C35.0968 25.5484 34.3226 24.7742 33.5484 24.7742H27.3548C26.4516 24.7742 25.8064 25.5484 25.8064 26.3226V27.3548C25.8064 28.2581 26.4516 28.9032 27.3548 28.9032H28.9032V44.3871H27.3548ZM32 13.4194C29.6774 13.4194 27.871 15.3548 27.871 17.5484C27.871 19.871 29.6774 21.6774 32 21.6774C34.1935 21.6774 36.129 19.871 36.129 17.5484C36.129 15.3548 34.1935 13.4194 32 13.4194Z"
+                                    fill="#377DFF" />
+                            </svg>
+                            <div class="checkoutPayment__noteText">
+                                <p>
+                                    <span class="checkoutPayment__noteBold">Внимание!</span> Все заказы общей
+                                    стоимостью свыше
+                                    1000грн - отправляются по предоплате 300грн.
+                                </p>
+                                <p>
+                                    Форма для предоплаты будет доступна после подтверждения заказа, а также
+                                    будет
+                                    отправлена на указаный Вами Email.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkoutPayment__row">
+                    <input type="radio" name="payment" value="payment_credit_card" id="payment_credit_card"
+                        class="checkoutPayment__radio">
+                    <label for="payment_credit_card" class="checkoutPayment__label">
+                        <div class="checkoutPayment__mark"></div>
+                        <div class="checkoutPayment__name">
+                            Картой онлайн
+                            <span class="checkoutPayment__subname">
+                                Easy pay
+                            </span>
+                        </div>
+                    </label>
+
+                    <div class="checkoutPayment__form checkoutSubForm">
+                        <div class="checkoutPayment__note">
+                            <svg class="checkoutPayment__noteIcon" width="64" height="64" viewBox="0 0 64 64"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32 4.12903C47.2258 4.12903 59.871 16.6452 59.871 32C59.871 47.4839 47.3548 59.871 32 59.871C16.5161 59.871 4.12903 47.4839 4.12903 32C4.12903 16.6452 16.5161 4.12903 32 4.12903ZM32 0C14.3226 0 0 14.4516 0 32C0 49.6774 14.3226 64 32 64C49.5484 64 64 49.6774 64 32C64 14.4516 49.5484 0 32 0ZM27.3548 44.3871C26.4516 44.3871 25.8064 45.1613 25.8064 45.9355V46.9677C25.8064 47.871 26.4516 48.5161 27.3548 48.5161H36.6452C37.4194 48.5161 38.1935 47.871 38.1935 46.9677V45.9355C38.1935 45.1613 37.4194 44.3871 36.6452 44.3871H35.0968V26.3226C35.0968 25.5484 34.3226 24.7742 33.5484 24.7742H27.3548C26.4516 24.7742 25.8064 25.5484 25.8064 26.3226V27.3548C25.8064 28.2581 26.4516 28.9032 27.3548 28.9032H28.9032V44.3871H27.3548ZM32 13.4194C29.6774 13.4194 27.871 15.3548 27.871 17.5484C27.871 19.871 29.6774 21.6774 32 21.6774C34.1935 21.6774 36.129 19.871 36.129 17.5484C36.129 15.3548 34.1935 13.4194 32 13.4194Z"
+                                    fill="#377DFF" />
+                            </svg>
+                            <div class="checkoutPayment__noteText">
+                                <p>
+                                    <span class="checkoutPayment__noteBold">Внимание!</span>
+                                    Форма для полной оплаты заказа будет доступна после подтверждения заказа, а
+                                    также будет отправлена на указаный Вами Email.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkoutPayment__row">
+                    <input type="radio" name="payment" value="payment_installment" id="payment_installment"
+                        class="checkoutPayment__radio">
+                    <label for="payment_installment" class="checkoutPayment__label">
+                        <div class="checkoutPayment__mark"></div>
+                        <div class="checkoutPayment__name">
+                            Рассрочка
+                            <span class="checkoutPayment__subname">
+                                Альфа-Банк
+                            </span>
+                        </div>
+                    </label>
+
+                    <div class="checkoutPayment__form checkoutSubForm formInstallment">
+                        <button type="button" class="formInstallment__type">
+                            <span class="formInstallment__typeTitle">
+                                Вариантов рассрочки:
+                            </span>
+                            <span class="formInstallment__typeValue">
+                                4 месяца (беспроцентная рассрочка)
+                            </span>
+                            <svg class="formInstallment__typeArrow" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.8814 0.749507L13.2802 0.118343C13.122 -0.0394477 12.8689 -0.0394477 12.7424 0.118343L7.01582 5.83037L1.25763 0.118343C1.13107 -0.0394477 0.877966 -0.0394477 0.719774 0.118343L0.118644 0.749507C-0.039548 0.87574 -0.039548 1.12821 0.118644 1.286L6.73107 7.88166C6.88927 8.03945 7.11073 8.03945 7.26893 7.88166L13.8814 1.286C14.0395 1.12821 14.0395 0.87574 13.8814 0.749507Z"
+                                    fill="#377DFF" />
+                            </svg>
+
+                            <span class="formInstallment__dropdown">
+                                <span class="formInstallment__dropdownItem">2 месяца (беспроцентная рассрочка)</span>
+                                <span class="formInstallment__dropdownItem">4 месяца (беспроцентная рассрочка)</span>
+                                <span class="formInstallment__dropdownItem">6 месяцев (беспроцентная рассрочка)</span>
+                                <span class="formInstallment__dropdownItem">12 месяцев (беспроцентная рассрочка)</span>
+                            </span>
+                        </button>
+
+                        <div class="formInstallment__monthly">
+                            <div class="formInstallment__monthlyTitle">
+                                Ежемесячный платеж:
+                            </div>
+                            <div class="formInstallment__monthlyPrice">
+                                22 500
+                                <span class="formInstallment__monthlyCurrency">
+                                    ₴
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="formInstallment__overpayment">
+                            <div class="formInstallment__overpaymentTitle">
+                                Переплата:
+                            </div>
+                            <div class="formInstallment__overpaymentPrice">
+                                0
+                                <span class="formInstallment__overpaymentCurrency">
+                                    ₴
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="checkoutPayment__note">
+                            <svg class="checkoutPayment__noteIcon" width="64" height="64" viewBox="0 0 64 64"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32 4.12903C47.2258 4.12903 59.871 16.6452 59.871 32C59.871 47.4839 47.3548 59.871 32 59.871C16.5161 59.871 4.12903 47.4839 4.12903 32C4.12903 16.6452 16.5161 4.12903 32 4.12903ZM32 0C14.3226 0 0 14.4516 0 32C0 49.6774 14.3226 64 32 64C49.5484 64 64 49.6774 64 32C64 14.4516 49.5484 0 32 0ZM27.3548 44.3871C26.4516 44.3871 25.8064 45.1613 25.8064 45.9355V46.9677C25.8064 47.871 26.4516 48.5161 27.3548 48.5161H36.6452C37.4194 48.5161 38.1935 47.871 38.1935 46.9677V45.9355C38.1935 45.1613 37.4194 44.3871 36.6452 44.3871H35.0968V26.3226C35.0968 25.5484 34.3226 24.7742 33.5484 24.7742H27.3548C26.4516 24.7742 25.8064 25.5484 25.8064 26.3226V27.3548C25.8064 28.2581 26.4516 28.9032 27.3548 28.9032H28.9032V44.3871H27.3548ZM32 13.4194C29.6774 13.4194 27.871 15.3548 27.871 17.5484C27.871 19.871 29.6774 21.6774 32 21.6774C34.1935 21.6774 36.129 19.871 36.129 17.5484C36.129 15.3548 34.1935 13.4194 32 13.4194Z"
+                                    fill="#377DFF" />
+                            </svg>
+                            <div class="checkoutPayment__noteText">
+                                <p>
+                                    <span class="checkoutPayment__noteBold">Внимание!</span>
+                                    Паспортные данные должны быть указаны на украинском языке и полностью
+                                    соответствовать информации в паспорте.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="formInstallment__fields">
+
+
+                            <label class="formInstallment__label">
+                                <span class="formInstallment__labelText">
+                                    Фамилия
+                                </span>
+                                <input type="text" name="surname" class="formInstallment__input">
+                            </label>
+
+                            <label class="formInstallment__label">
+                                <span class="formInstallment__labelText">
+                                    Имя
+                                </span>
+                                <input type="text" name="name" class="formInstallment__input">
+                            </label>
+
+                            <label class="formInstallment__label">
+                                <span class="formInstallment__labelText">
+                                    Отчество
+                                </span>
+                                <input type="text" name="patronymic" class="formInstallment__input">
+                            </label>
+
+                            <label class="formInstallment__label">
+                                <span class="formInstallment__labelText">
+                                    Идентификационный код
+                                </span>
+                                <input type="text" name="identification_code" class="formInstallment__input">
+                            </label>
+
+                            <label class="formInstallment__label">
+                                <span class="formInstallment__labelText">
+                                    Адрес проживания
+                                </span>
+                                <input type="text" name="address" class="formInstallment__input">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pageCheckout__section checkoutAdditionalInfo">
+                <h2 class="pageCheckout__title">
+                    <svg class="pageCheckout__icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="12" fill="#171717" />
+                        <path
+                            d="M27.375 29.2969V21.75C27.375 21.0469 27 20.3906 26.4844 19.9688C27.4688 19.1719 28.125 17.9062 28.125 16.5C28.125 14.0625 26.0625 12 23.625 12C21.1406 12 19.125 14.0625 19.125 16.5C19.125 17.6719 19.5469 18.75 20.25 19.5C18.9844 19.5 18 20.5312 18 21.75V24C18 25.125 18.7969 26.0625 19.875 26.25V29.2969C18.7969 29.4844 18 30.4219 18 31.5V33.75C18 35.0156 18.9844 36 20.25 36H27C28.2188 36 29.25 35.0156 29.25 33.75V31.5C29.25 30.4219 28.4062 29.4844 27.375 29.2969ZM23.625 13.5C25.2656 13.5 26.625 14.8594 26.625 16.5C26.625 18.1875 25.2656 19.5 23.625 19.5C21.9375 19.5 20.625 18.1875 20.625 16.5C20.625 14.8594 21.9375 13.5 23.625 13.5ZM27.75 33.75C27.75 34.1719 27.375 34.5 27 34.5H20.25C19.8281 34.5 19.5 34.1719 19.5 33.75V31.5C19.5 31.125 19.8281 30.75 20.25 30.75H21.375V24.75H20.25C19.8281 24.75 19.5 24.4219 19.5 24V21.75C19.5 21.375 19.8281 21 20.25 21H25.125C25.5 21 25.875 21.375 25.875 21.75V30.75H27C27.375 30.75 27.75 31.125 27.75 31.5V33.75Z"
+                            fill="white" />
+                    </svg>
+                    Доп. информация
+                </h2>
+                <h3 class="pageCheckout__subtitle">
+                    Кто получатель заказа?
+                </h3>
+
+                <div class="checkoutAdditionalInfo__row">
+                    <input type="radio" name="recipient" value="buyer_is_ser" id="buyer_is_ser"
+                        class="checkoutAdditionalInfo__radio">
+                    <label for="buyer_is_ser" class="checkoutAdditionalInfo__label">
+                        <div class="checkoutAdditionalInfo__mark"></div>
+                        <div class="checkoutAdditionalInfo__name">
+                            Я
+                        </div>
+                    </label>
+                </div>
+                <div class="checkoutAdditionalInfo__row">
+                    <input type="radio" name="recipient" value="buyer_another_person" id="buyer_another_person"
+                        class="checkoutAdditionalInfo__radio">
+                    <label for="buyer_another_person" class="checkoutAdditionalInfo__label">
+                        <div class="checkoutAdditionalInfo__mark"></div>
+                        <div class="checkoutAdditionalInfo__name">
+                            Другой человек
+                        </div>
+                    </label>
+
+                    <div class="checkoutAdditionalInfo__form checkoutSubForm">
+                        <label class="checkoutAdditionalInfo__inputLabel">
+                            <span class="checkoutAdditionalInfo__labelText">
+                                Имя
+                            </span>
+                            <input type="text" name="recipient_name" class="checkoutAdditionalInfo__input">
+                        </label>
+                        <label class="checkoutAdditionalInfo__inputLabel">
+                            <span class="checkoutAdditionalInfo__labelText">
+                                Фамилия
+                            </span>
+                            <input type="text" name="recipient_surname" class="checkoutAdditionalInfo__input">
+                        </label>
+                        <label class="checkoutAdditionalInfo__inputLabel">
+                            <span class="checkoutAdditionalInfo__labelText">
+                                Отчество
+                            </span>
+                            <input type="text" name="recipient_patronymic" class="checkoutAdditionalInfo__input">
+                        </label>
+                        <label class="checkoutAdditionalInfo__inputLabel">
+                            <span class="checkoutAdditionalInfo__labelText">
+                                Номер телефона
+                            </span>
+                            <input type="tel" name="recipient_phone" class="checkoutAdditionalInfo__input" maxlength="19">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="checkoutAdditionalInfo__comment">
+                    <div class="checkoutAdditionalInfo__subtitle">
+                        Комментарий к заказу
+                    </div>
+
+                    <label class="checkoutAdditionalInfo__textarealabel">
+                        <span class="checkoutAdditionalInfo__textareaText">
+                            Ваш комментарий
+                        </span>
+                        <textarea name="comment" cols="30" rows="10"
+                            class="checkoutAdditionalInfo__textarea"></textarea>
+                    </label>
+
+                </div>
+            </div>
+        </form>
+
+        <div class="pageCheckout__summary checkoutSummary">
+            <div class="pageCheckout__title checkoutSummary__title">
+                Итог заказа
+            </div>
+
+            <div class="checkoutSummary__info">
+                <div class="checkoutSummary__row">
+                    <div class="checkoutSummary__name">
+                        3 товара на сумму:
+                    </div>
+
+                    <div class="checkoutSummary__price">
+                        <div class="checkoutSummary__priceValue">
+                            74 500
+                            <span class="checkoutSummary__priceCurrency">
+                                ₴
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkoutSummary__row">
+                    <div class="checkoutSummary__name">
+                        Стоимость доставки:
+                    </div>
+
+                    <div class="checkoutSummary__price">
+                        <div class="checkoutSummary__priceValue">
+                            240
+                            <span class="checkoutSummary__priceCurrency">
+                                ₴
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkoutSummary__row">
+                    <div class="checkoutSummary__name">
+                        Предоплата:
+                    </div>
+
+                    <div class="checkoutSummary__price">
+                        <div class="checkoutSummary__priceValue">
+                            300
+                            <span class="checkoutSummary__priceCurrency">
+                                ₴
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkoutSummary__total">
+                <div class="checkoutSummary__totalTitle">
+                    Итого к оплате:
+                </div>
+                <div class="checkoutSummary__totalPrice">
+                    <div class="checkoutSummary__totalValue">
+                        75 040
+                        <span class="checkoutSummary__totalCurrency">
+                            ₴
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="checkoutSummary__button button buttonPrimary buttonPrimary_high">
+                Подтвердить заказ
+            </button>
+
+            <div class="checkoutSummary__note">
+                <div class="checkoutSummary__noteText">
+                    <p>
+                        Получение заказа от 5 000 ₴ только по паспорту (Закон от 06.12.2019 No 361-IX).
+                    </p>
+                    <p>
+                        Подтверждая заказ, я принимаю условия <a href="#" class="checkoutSummary__noteLink">Публичной
+                            оферты</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+@@include('./sections/footerCheckout.html')

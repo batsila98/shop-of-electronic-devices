@@ -1,0 +1,148 @@
+.productOptions {
+  &__item {
+    margin: 0 0 22px 0;
+  }
+
+  &__title {
+    margin: 0 0 12px 0;
+    color: var(--colorDarkGrey);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  &__values {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__radio {
+    width: 0;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+
+    &:checked + label {
+      color: var(--colorWhite);
+      border-color: var(--colorBlue);
+      background-color: var(--colorBlue);
+    }
+
+    &:checked + .productOptions__labelColorOption {
+      border-color: var(--colorBlue);
+      background-color: unset;
+    }
+  }
+
+  &__label {
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 2px 0;
+    padding: 0 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--colorBlue);
+    border-radius: 20px;
+    border: 2px solid var(--colorLightGrey);
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      border-color: var(--colorBlue);
+    }
+
+    &:active {
+      color: var(--colorWhite);
+      background-color: var(--colorBlue);
+    }
+  }
+
+  &__labelColorOption {
+    width: 32px;
+    height: 32px;
+    padding: 3px;
+    border-radius: 50%;
+
+    &:hover {
+      border-color: var(--colorBlue);
+    }
+  }
+
+  &__radioMark {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    &_purple {
+      background-color: #bdb4eb;
+    }
+
+    &_red {
+      background-color: #e23839;
+    }
+
+    &_grey {
+      background-color: #9c99a2;
+    }
+
+    &_blue {
+      background-color: #b1cbd8;
+    }
+
+    &_green {
+      background-color: #e4f4df;
+    }
+
+    &_beige {
+      background-color: #fbf6f0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .productOptions {
+    width: 100%;
+    overflow: hidden;
+
+    &__item {
+      overflow: hidden;
+      position: relative;
+
+      &::after {
+        content: "";
+        height: 100%;
+        width: 20%;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 0;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, #fff 60%);
+      }
+    }
+
+    &__values {
+      width: 100%;
+      padding: 0 16% 0 0;
+      overflow: auto;
+      flex-wrap: nowrap;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE and Edge */
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &__label {
+      min-width: fit-content;
+    }
+  }
+}

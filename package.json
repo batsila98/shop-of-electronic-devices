@@ -1,0 +1,33 @@
+{
+  "name": "matviez",
+  "version": "1.0.0",
+  "description": "Matviez shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trofimenk0/matviez.git"
+  },
+  "author": "Trofimenko Denis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trofimenk0/matviez/issues"
+  },
+  "homepage": "https://github.com/trofimenk0/matviez#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.38.2"
+  },
+  "dependencies": {
+    "air-datepicker": "^2.2.3",
+    "js-image-zoom": "^0.7.0"
+  }
+}
